@@ -123,13 +123,13 @@ body {
     margin: 20px 0px;
     background-color: #A5D3EE;
 }   
-.gallery-image {
-    object-fit: cover;
-    height: 500px;
-}
 .carrusel {
     display: flex;
     height: 80%;
+}
+.carrusel-image {
+    object-fit: cover;
+    height: inherit;
 }
 .title-recarga {
     height: 100px;
