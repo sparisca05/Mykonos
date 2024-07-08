@@ -1,0 +1,141 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mykonos</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'Imagenes/favicon csj.png' %}">
+    <link rel="stylesheet" href="{% static 'clases.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="{% static 'script.js' %}"></script>
+    <style>
+        .intro-bg{
+            background-image: url("{% static 'Imagenes/IMAGEN HOME INICIO.png'%}");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .intro-text-bg{
+            background-image: linear-gradient(to top, rgb(25, 105, 173, 0.85), rgba(54, 117, 172, 0.7), rgba(106, 142, 173, 0.801), rgba(0, 0, 0, 0));
+        }
+        .diapo-bg {
+            background-image: linear-gradient(rgba(242, 242, 242, 0.9), rgba(242, 242, 242, 0.9)), url("{% static 'Imagenes/fondo palmeras.png'%}");
+            background-attachment: fixed;
+            background-size: cover;
+            padding: 100px 0px;
+        }
+        .iconos-bg{
+            background-image: url("{% static 'Imagenes/HOJAS PALMERA PG 7.png'%}");
+            background-size: contain;
+            padding: 50px;
+        }
+        .nosotros-bg {
+            background-image: url("{% static 'Imagenes/dispo-MISION.jpg'%}");
+            background-size: cover;
+        }
+        .nosotros-bg2{
+            background-image: url("{% static 'Imagenes/Textura clara dividida.jpg'%}");
+            background-size: cover;
+        }
+        .nosotros-bg3{
+            background-image: url("{% static 'Imagenes/diapo-OBJ.jpg'%}");
+            background-size: cover;
+        }
+        .footer-bg {
+            background-image: linear-gradient(rgba(165, 211, 238, 0.9), rgba(165, 211, 238, 0.9)), url("{% static 'Imagenes/IMAGEN FONDO PIE DE PÁGINA.png'%}");
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-bg" id="navbar">
+        <img src="{% static 'Imagenes/fondo encabezado.png' %}" class="navbar-bg-image" alt="Background">
+        <div class="container-fluid">
+            <a href="/#" style="margin: 0px 30px 50px 30px">
+                <img src="{% static 'Imagenes/LOGO ENCABEZADO.png' %}" class="imagen-logo" id="logo" alt="logo">
+            </a>
+            <div class="navbar-container">
+                <a href="#" class="reservar">
+                    <img style="height: 70px;" src="{% static 'Imagenes/reservar ahora encabezado.png' %}" alt="">
+                </a>
+                <div class="menu" id="menu">
+                    <div class="navbar-toggler" onclick="toggleMenu()">
+                        <img style="height: 50px;" src="{% static 'Imagenes/ICONO MENU ENCABEZADO.png' %}" alt="Menú">
+                    </div>
+                    <ul class="navbar-nav" id="nav-items">
+                        <li class="nav-link">
+                            <a href="/" class="nav-item">Home</a>
+                        </li>
+                        <li class="nav-link dropdown">
+                            <a href="/proyectos" class="nav-item dropbtn">Proyectos</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="/nosotros" class="nav-item">Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <a class="contacto-wpp" href="#">
+        <img style="width: 80px;" src="{% static 'Imagenes/LOGO WHATSAPP.png' %}" alt="Whatsapp">
+    </a>
+    {% block content %}
+    {% endblock %}
+    <div class="container-footer footer-bg">
+        <img class="imagen-logo img-grande" src="{% static 'Imagenes/LOGO PIE DE PAGINA.png'%}" alt="Mykonos">
+        <div class="footer">
+            <div class="footer-col">
+                <div class="block-footer">
+                    <div class="block-footer-subt">
+                        <h3 class="footer-subt">Dirección</h3>
+                    </div>
+                    <div class="block-footer-info">
+                        <p>Calle 4 # 20 - 103</p>
+                        <p>Coveñas. Sucre. Colombia</p>
+                        <br>
+                        <p>Código postal: 706050</p>
+                    </div>
+                </div>
+                <div class="block-footer">
+                    <div class="block-footer-subt">
+                        <h3 class="footer-subt">Contacto</h3>
+                    </div>
+                    <div class="block-footer-info">
+                        <p>+57 323 5106772</p>
+                        <br>
+                        <p>mykonosapartahotel@gmail.com</p>
+                        <p>finayuda@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-col">
+                <div class="block-footer">
+                    <div class="block-footer-subt">
+                        <h3 class="footer-subt">Redes sociales</h3>
+                    </div>
+                    <div class="block-footer-info">
+                        <p>Puedes seguirnos en:</p>
+                        <div>
+                            <a href=""><img class="icono-redes" src="{% static 'Imagenes/LOGO WHATSAPP.png' %}" alt="Whatsapp"></a>
+                            <a href=""><img class="icono-redes" src="{% static 'Imagenes/LOGO INSTAGRAM.png' %}" alt="Instagram"></a>
+                            <a href=""><img class="icono-redes" src="{% static 'Imagenes/LOGO AIRBNB.png' %}" alt="Airbnb"></a>
+                        </div>
+                    </div>
+                </div><div class="block-footer">
+                    <div class="block-footer-info">
+                        <p>Check-in: 3pm</p>
+                        <p>Check-out: 11am</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: center;">
+            <a href="#" class="reservar" onclick="document.location='/contact'">
+                <img style="height: 120px;" src="{% static 'Imagenes/RESERVAR AHORA pie de pagina.png' %}" alt="">
+            </a>
+        </div>
+    </div>
+</body>
+</html>

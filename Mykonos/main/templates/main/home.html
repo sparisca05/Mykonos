@@ -1,0 +1,79 @@
+{% extends 'main/layouts/nav.html' %}
+
+{% load static %}
+{% block content %}
+<div>
+    <div class="intro-bg">
+        <div class="home-image-container">
+            <img class="home-image" src="{% static 'Imagenes/LOGO PIE DE PAGINA.png'%}" alt="">
+        </div>
+        <div class="container-intro-text intro-text-bg">
+            <img style="width: 30%;" src="{% static 'Imagenes/LOGO PG 2.png' %}" alt="">
+            <p class="paragraph center">Exclusivo aparta hotel boutique ubicado en el hermoso Golfo de Morrosquillo a tan solo 10 minutos de Coveñas.  
+            Encontrarás el equilibrio perfecto entre diversión y descanso, contamos con hermosos apartamentos,piscina privada, 
+            kioskos y salida frente al mar que harán de tu estadía inolvidable!
+            </p>
+        </div>
+    </div>
+</div>
+<div class="diapo-bg">
+    <div class="container-diapo">
+        <div class="diapo-text right">
+            <h1 class="diapo-title">Apartamentos</h1>
+            <p class="paragraph">En Mykonos Apartahotel encontraras 5 diferentes apartamentos con distintas comodidades pensados para ti y tu familia!</p>
+            <button class="diapo-btn">Conoce los apartamentos!</button>
+        </div>
+        <div style="width: 50%;">
+            <img class="diapo-image" src="{% static 'Imagenes/IMAGEN APARTMENTOS PG 3.png' %}" alt="">
+        </div>
+    </div>
+    <div class="container-diapo">
+        <div style="width: 50%;">
+            <img class="diapo-image" src="{% static 'Imagenes/IMAGEN SERVICIOS PG 4.png' %}" alt="">
+        </div>
+        <div class="diapo-text left">
+            <h1 class="diapo-title">Servicios</h1>
+            <p class="paragraph">En Mykonos Apartahotel nos enorgullece ofrecer servicios de alta calidad que harán de tu estadía inolvidable</p>
+            <button class="diapo-btn">Conoce nuestros servicios!</button>
+        </div>
+    </div>
+    <div class="container-diapo">
+        <div class="diapo-text right">
+            <h1 class="diapo-title">Eventos</h1>
+            <p class="paragraph">En Mykonos Apartahotel contamos con un gran kiosko perfecto para tus reuniones especiales. Ubicado frente al mar que hará de tu evento memorable</p>
+            <button class="diapo-btn">Más información</button>
+        </div>
+        <div style="width: 50%;">
+            <img class="diapo-image" src="{% static 'Imagenes/IMAGEN EVENTOS PG 5.png' %}" alt="">
+        </div>
+    </div>
+</div>
+<div class="separador"></div>
+<div>
+    <div class="container-intro-text">
+        <h1 class="diapo-title">Galería</h1>
+        <div class="carrusel">
+            <img class="gallery-image" src="{% static 'Imagenes/IMAGEN GALERIA 1.jpg' %}" alt="">
+            <img class="gallery-image" src="{% static 'Imagenes/IMAGEN GALERIA 2.jpg' %}" alt="">
+            <img class="gallery-image" src="{% static 'Imagenes/IMAGEN GALERIA 3.jpg' %}" alt="">
+            <img class="gallery-image" src="{% static 'Imagenes/IMAGEN GALERIA 4.jpg' %}" alt="">
+            <img class="gallery-image" src="{% static 'Imagenes/IMAGEN GALERIA 5.jpg' %}" alt="">
+        </div>
+    </div>
+</div>
+<div class="iconos-bg">
+    <div style="padding: 30px 10%; display: flex; flex-direction: column;">
+        <img class="title-recarga" src="{% static 'Imagenes/RECARGA TU ENERGIA PG 7.png' %}" alt="Recarga tu energía">
+        <p class="paragraph center">Una vez en Coveñas, hacemos cada uno de tus días inolvidables</p>
+    </div>
+    <div class="iconos">
+        <img class="icono" src="{% static 'Imagenes/icono piscina pg 7.png' %}" alt="Piscina">
+        <img class="icono" src="{% static 'Imagenes/icono playa pg 7.png' %}" alt="Playa">
+        <img class="icono" src="{% static 'Imagenes/icono kiosko pg 7.png' %}" alt="Kiosko">
+        <img class="icono" src="{% static 'Imagenes/icono wifi pg 7.png' %}" alt="Wifi">
+    </div>
+    <div style="width: 100%; display: flex; justify-content: center;">
+        <a href=""><img style="height: 100px;" src="{% static 'Imagenes/ver todos los servicios pg 7.png' %}" alt="Ver todos los servicios"></a>
+    </div>
+</div>
+{% endblock %}
