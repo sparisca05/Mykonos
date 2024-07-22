@@ -5,11 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mykonos</title>
-    <link rel="icon" type="image/x-icon" href="{% static 'Imagenes/favicon csj.png' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'Imagenes/LOGO PIE DE PAGINA.png' %}">
     <link rel="stylesheet" href="{% static 'clases.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <script src="{% static 'script.js' %}"></script>
     <style>
+        @font-face {
+            font-family: 'RiotSquad';
+            src: url("{% static 'Fonts/RiotSquad.ttf'%}") format('truetype');
+        }
+        @font-face {
+            font-family: 'PoiretOne-Regular';
+            src: url("{% static 'Fonts/PoiretOne-Regular.ttf'%}") format('truetype');
+        }
+        @font-face {
+            font-family: 'BeyondInfinity';
+            src: url("{% static 'Fonts/Beyond Infinity - Demo.ttf'%}") format('truetype');
+        }
         .intro-bg{
             background-image: url("{% static 'Imagenes/IMAGEN HOME INICIO.png'%}");
             background-size: cover;
@@ -58,11 +70,11 @@
             </a>
             <div class="navbar-container">
                 <a href="#" class="reservar">
-                    <img style="height: 70px;" src="{% static 'Imagenes/reservar ahora encabezado.png' %}" alt="">
+                    <img style="height: min(70px, 5vw); min-height: 50px;" src="{% static 'Imagenes/reservar ahora encabezado.png' %}" alt="">
                 </a>
                 <div class="menu" id="menu">
                     <div class="navbar-toggler" onclick="toggleMenu()">
-                        <img style="height: 50px;" src="{% static 'Imagenes/ICONO MENU ENCABEZADO.png' %}" alt="Menú">
+                        <img style="height: min(50px, 4vw); min-height: 40px;" src="{% static 'Imagenes/ICONO MENU ENCABEZADO.png' %}" alt="Menú">
                     </div>
                     <ul class="navbar-nav" id="nav-items">
                         <li class="nav-link">
@@ -88,31 +100,31 @@
         <img class="imagen-logo img-grande" src="{% static 'Imagenes/LOGO PIE DE PAGINA.png'%}" alt="Mykonos">
         <div class="footer">
             <div class="footer-col">
-                <div class="block-footer">
+                <div>
                     <div class="block-footer-subt">
                         <h3 class="footer-subt">Dirección</h3>
                     </div>
                     <div class="block-footer-info">
-                        <p>Calle 4 # 20 - 103</p>
-                        <p>Coveñas. Sucre. Colombia</p>
+                        <p>Calle 4 # 20 - 103 <br>
+                        Coveñas. Sucre. Colombia</p>
                         <br>
                         <p>Código postal: 706050</p>
                     </div>
                 </div>
-                <div class="block-footer">
+                <div>
                     <div class="block-footer-subt">
                         <h3 class="footer-subt">Contacto</h3>
                     </div>
                     <div class="block-footer-info">
                         <p>+57 323 5106772</p>
                         <br>
-                        <p>mykonosapartahotel@gmail.com</p>
-                        <p>finayuda@gmail.com</p>
+                        <p>mykonosapartahotel@gmail.com <br>
+                        finayuda@gmail.com</p>
                     </div>
                 </div>
             </div>
             <div class="footer-col">
-                <div class="block-footer">
+                <div>
                     <div class="block-footer-subt">
                         <h3 class="footer-subt">Redes sociales</h3>
                     </div>
@@ -124,17 +136,18 @@
                             <a href=""><img class="icono-redes" src="{% static 'Imagenes/LOGO AIRBNB.png' %}" alt="Airbnb"></a>
                         </div>
                     </div>
-                </div><div class="block-footer">
+                </div>
+                <div>
                     <div class="block-footer-info">
-                        <p>Check-in: 3pm</p>
-                        <p>Check-out: 11am</p>
+                        <p>Check-in: 3pm <br>
+                        Check-out: 11am</p>
                     </div>
                 </div>
             </div>
         </div>
         <div style="display: flex; align-items: center;">
             <a href="#" class="reservar" onclick="document.location='/contact'">
-                <img style="height: 120px;" src="{% static 'Imagenes/RESERVAR AHORA pie de pagina.png' %}" alt="">
+                <img class="reservar-footer" src="{% static 'Imagenes/RESERVAR AHORA pie de pagina.png' %}" alt="">
             </a>
         </div>
     </div>
