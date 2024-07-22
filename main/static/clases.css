@@ -66,6 +66,7 @@ body {
 .paragraph {
     font-size: 32px;
     line-height: 50px;
+    font-family: 'PoiretOne-Regular';
 }
 .center {
     text-align: center;
@@ -87,6 +88,13 @@ body {
     height: 80vh;
     padding: 0px 120px;
 }
+@font-face {
+    font-family: 'RiotSqua';
+    src: url('main\static\Fonts\RIOTSQUA.TTF') format('truetype');
+    font-family: 'PoiretOne-Regular';
+    src: url('main\static\Fonts\PoiretOne-Regular.ttf') format('truetype');
+    /* Puedes agregar más formatos de fuentes aquí si es necesario */
+}
 .container-diapo{
     display: flex;
     align-items: center;
@@ -97,6 +105,7 @@ body {
     font-size: max(4vw, 40px);
     color: #183d63;
     margin: 20px 0px;
+    font-family: 'RiotSqua';
 }
 .diapo-text {
     width: 50%;
@@ -116,6 +125,7 @@ body {
     border-radius: 10px;
     font-size: 20px;
     cursor: pointer;
+    font-family: 'PoiretOne-Regular';
 }
 .separador{
     width: 100%;
@@ -123,14 +133,27 @@ body {
     margin: 20px 0px;
     background-color: #A5D3EE;
 }   
-.carrusel {
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 1000px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: 0 auto; /* Centra el carrusel horizontalmente */
+}
+
+.carousel-track {
     display: flex;
-    height: 80%;
+    transition: transform 0.5s ease;
+    align-items: center; /* Centra verticalmente las imágenes */
 }
-.carrusel-image {
-    object-fit: cover;
-    height: inherit;
+
+.carousel-image {
+    max-width: 100%; /* Ajusta el ancho máximo al 100% del contenedor */
+    max-height: 100%; /* Ajusta la altura máxima al 100% del contenedor */
+    height: auto; /* Ajusta la altura automáticamente */
+    object-fit: contain; /* Ajusta la imagen para que quepa completamente dentro del contenedor */
+    flex: 0 0 auto; /* Asegura que las imágenes no se redimensionen */
 }
+
 .title-recarga {
     height: 100px;
     align-self: flex-end;
@@ -591,6 +614,7 @@ body {
     font-size: 35px;
     color: white;
     padding: 10px;
+    font-family: Po;
 }
 .contadores-principales {
     display: flex;
