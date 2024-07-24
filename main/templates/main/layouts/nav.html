@@ -46,14 +46,6 @@
             background-size: cover;
             background-position: center;
         }
-        .nosotros-bg2{
-            background-image: url("{% static 'Imagenes/Textura clara dividida.jpg'%}");
-            background-size: cover;
-        }
-        .nosotros-bg3{
-            background-image: url("{% static 'Imagenes/diapo-OBJ.jpg'%}");
-            background-size: cover;
-        }
         .footer-bg {
             background-image: linear-gradient(rgba(165, 211, 238, 0.9), rgba(165, 211, 238, 0.9)), url("{% static 'Imagenes/IMAGEN FONDO PIE DE PÁGINA.png'%}");
             background-position: center;
@@ -76,19 +68,39 @@
                     <div class="navbar-toggler" onclick="toggleMenu()">
                         <img style="height: min(50px, 4vw); min-height: 40px;" src="{% static 'Imagenes/ICONO MENU ENCABEZADO.png' %}" alt="Menú">
                     </div>
-                    <ul class="navbar-nav" id="nav-items">
-                        <li class="nav-link">
-                            <a href="/" class="nav-item">Home</a>
-                        </li>
-                        <li class="nav-link dropdown">
-                            <a href="/proyectos" class="nav-item dropbtn">Proyectos</a>
-                        </li>
-                        <li class="nav-link">
-                            <a href="/nosotros" class="nav-item">Nosotros</a>
-                        </li>
-                    </ul>
                 </div>
             </div>
+            <ul class="navbar-nav hidden" id="nav-items">
+                <button onclick="toggleMenu()">x</button>
+                <li>
+                    <a href="/apartamentos" class="nav-item">Apartamentos</a>
+                </li>
+                <div></div>
+                <li>
+                    <a href="/servicios" class="nav-item dropbtn">Servicios</a>
+                </li>
+                <div></div>
+                <li>
+                    <a href="/eventos" class="nav-item">Eventos</a>
+                </li>
+                <div></div>
+                <li>
+                    <a href="/galeria" class="nav-item">Galeria</a>
+                </li>
+                <div></div>
+                <li>
+                    <a href="/ubicacion" class="nav-item">Ubicacion</a>
+                </li>
+                <div></div>
+                <li>
+                    <a href="/cabanacompleta" class="nav-item">Cabana completa</a>
+                </li>
+                <div></div>
+                <li>
+                    <a href="/contactanos" class="nav-item">Contactanos</a>
+                </li>
+                <div></div>
+            </ul>
         </div>
     </nav>
     <a class="contacto-wpp" href="#">
