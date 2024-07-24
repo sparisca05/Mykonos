@@ -170,9 +170,9 @@ p {
     align-items: center;
 }
 .home-image {
-    margin: 80px;
-    height: min(50%, 30vw);
-    min-height: 320px;
+    margin: 7%;
+    height: min(45%, 25vw);
+    min-height: 250px;
 }
 .diapositiva{
     display: flex;
@@ -247,6 +247,15 @@ p {
 .icono {
     height: 16vw;
     min-height: 140px;
+}
+.container-verservicios {
+    display: flex;
+    justify-content: center;
+}
+.container-verservicios a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .container-ubi {
     display: flex;
