@@ -7,7 +7,8 @@ def home(request):
     return render(request,"main/home.html")
 
 def apartamentos(request):
-    return render(request, "main/apartamentos.html")
+    apartamentos = Apto.objects.all()
+    return render(request, "main/apartamentos.html", {'aptos':apartamentos})
 
 def apto(request):
     return render(request, "main/apto.html")

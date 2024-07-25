@@ -23,6 +23,9 @@ p {
     font-size: max(2.3vw, 30px);
     font-family: 'PoiretOne-Regular';
 }
+ul {
+    margin: 0;
+}
 
 /* Home page styles */
 .menu {
@@ -66,7 +69,7 @@ p {
     align-content: center;
     position: fixed;
     right: 0;
-    z-index: 1;
+    z-index: 2;
     padding: 30px;
     background-color: #183d63;
     opacity: 1;
@@ -316,25 +319,20 @@ p {
 
 /* Apartamentos page styles */
 .grid-aptos {
-    min-height: 100vh;
-}
-.fila {
-    height: 25vw;
-    padding: 10px 0px;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-.col {
-    width: 49%;
-    min-width: 300px;
-    background-color: #6F6F73;
+.row-aptos {
+    display: flex;
+    gap: 20px;
+}
+.grid-aptos a {
+    width: min(50%, 30vw);
+    min-width: 30%;
     text-align: center;
-    border-radius: 1px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    background-color: #183d63;
 }
-
 
 
 .container-fluid{
@@ -447,22 +445,6 @@ p {
     max-width: 300px;
     border-bottom-right-radius: 80px;
 }
-.same-class {
-    color: yellow;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  .col h2 {
-    display: none;
-    transform: translateX(-100%);
-    transition: transform 2.0s ease;
-    font-weight: bold;
-  }
-  
-  .col:hover h2 {
-    display: block;
-    transform: translateX(0);
-  }
-
 .container-data {
     display: flex;
     justify-content: space-evenly;

@@ -3,8 +3,9 @@ from django.db import models
 # Create your models here.
 
 class Apto(models.Model):
-    nombre = models.TextField(max_length=50)
+    nombre = models.CharField(max_length=50)
     descripción = models.TextField(max_length=500)
+    ImagenPrincipal = models.ImageField(null=True, blank=True, upload_to='static/Imagenes/Aptos')
     Imagen1 = models.ImageField(null=True, blank=True, upload_to='static/Imagenes/Aptos')
     Imagen2 = models.ImageField(null=True, blank=True, upload_to='static/Imagenes/Aptos')
     Imagen3 = models.ImageField(null=True, blank=True, upload_to='static/Imagenes/Aptos')
@@ -15,3 +16,6 @@ class Apto(models.Model):
     Imagen8 = models.ImageField(null=True, blank=True, upload_to='static/Imagenes/Aptos')
     distribución = models.ImageField(null=True, blank=True, upload_to='static/Imagenes/Aptos')
     atributo1 = models.ImageField(null=True, blank=True, upload_to='static/Imagenes/Aptos')
+
+    def __str__(self):
+        return self.nombre

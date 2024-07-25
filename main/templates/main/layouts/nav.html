@@ -56,6 +56,37 @@
 <body>
     <nav class="navbar navbar-bg" id="navbar">
         <img src="{% static 'Imagenes/fondo encabezado.png' %}" class="navbar-bg-image" alt="Background">
+        <ul class="navbar-nav hidden" id="nav-items">
+            <button onclick="toggleMenu()">x</button>
+            <li>
+                <a href="/apartamentos" class="nav-item">Apartamentos</a>
+            </li>
+            <div></div>
+            <li>
+                <a href="/servicios" class="nav-item dropbtn">Servicios</a>
+            </li>
+            <div></div>
+            <li>
+                <a href="/eventos" class="nav-item">Eventos</a>
+            </li>
+            <div></div>
+            <li>
+                <a href="/galeria" class="nav-item">Galeria</a>
+            </li>
+            <div></div>
+            <li>
+                <a href="/ubicacion" class="nav-item">Ubicacion</a>
+            </li>
+            <div></div>
+            <li>
+                <a href="/cabanacompleta" class="nav-item">Cabana completa</a>
+            </li>
+            <div></div>
+            <li>
+                <a href="/contactanos" class="nav-item">Contactanos</a>
+            </li>
+            <div></div>
+        </ul>
         <div class="container-fluid">
             <a href="/#" style="margin: 0px 30px 50px 30px">
                 <img src="{% static 'Imagenes/LOGO ENCABEZADO.png' %}" class="imagen-logo" id="logo" alt="logo">
@@ -70,37 +101,6 @@
                     </div>
                 </div>
             </div>
-            <ul class="navbar-nav hidden" id="nav-items">
-                <button onclick="toggleMenu()">x</button>
-                <li>
-                    <a href="/apartamentos" class="nav-item">Apartamentos</a>
-                </li>
-                <div></div>
-                <li>
-                    <a href="/servicios" class="nav-item dropbtn">Servicios</a>
-                </li>
-                <div></div>
-                <li>
-                    <a href="/eventos" class="nav-item">Eventos</a>
-                </li>
-                <div></div>
-                <li>
-                    <a href="/galeria" class="nav-item">Galeria</a>
-                </li>
-                <div></div>
-                <li>
-                    <a href="/ubicacion" class="nav-item">Ubicacion</a>
-                </li>
-                <div></div>
-                <li>
-                    <a href="/cabanacompleta" class="nav-item">Cabana completa</a>
-                </li>
-                <div></div>
-                <li>
-                    <a href="/contactanos" class="nav-item">Contactanos</a>
-                </li>
-                <div></div>
-            </ul>
         </div>
     </nav>
     <a class="contacto-wpp" href="#">
