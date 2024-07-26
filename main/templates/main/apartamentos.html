@@ -1,15 +1,21 @@
 {% extends 'main/layouts/nav.html' %}
 
+{% load static %}
 {% block content %}
 <div style="padding: 7%; padding-top: 200px">
     <h1 class="right">Apartamentos</h1>
     <div class="grid-aptos">
-        {% for apto in aptos %}
-        <a href="/">
-            <h2 class="titulo-especifico same-class">{{apto.nombre}}</h2>
-            <img src="{{apto.ImagenPrincipal.url}}" alt="">
-        </a>
-        {% endfor %}
+        <div class="row1">
+            <a class="afrodita-bg" href="/">
+                <h2 style="border-bottom-left-radius: 20px;">Afrodita</h2>
+            </a>
+            <a class="eros-bg" href="/">
+                <h2 style="border-top-left-radius: 20px;">Eros</h2>
+            </a>
+            <a class="zeus-bg" href="/">
+                <h2 style="border-bottom-left-radius: 20px;">Zeus</h2>
+            </a>
+        </div>
     </div>
 </div>
 {% endblock %}

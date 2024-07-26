@@ -1,14 +1,12 @@
 from django.http import HttpResponse,JsonResponse
 from django.shortcuts import render
-from .models import Apto
 
 # Create your views here.
 def home(request):
     return render(request,"main/home.html")
 
 def apartamentos(request):
-    apartamentos = Apto.objects.all()
-    return render(request, "main/apartamentos.html", {'aptos':apartamentos})
+    return render(request, "main/apartamentos.html")
 
 def apto(request):
     return render(request, "main/apto.html")
