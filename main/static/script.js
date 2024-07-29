@@ -7,12 +7,12 @@ document.addEventListener('DOMContentLoaded', function() {
     let index = 0;
     const slides = track.children;
     const totalSlides = slides.length;
-    const slideWidth = slides[0].getBoundingClientRect().width;
+    const slideWidth = track.getBoundingClientRect().width / 3; // Divide el ancho total por 3
 
     function nextSlide() {
-        index++;
+        index += 3; // Aumenta el índice en 3 para mostrar 3 imágenes
         if (index >= totalSlides) {
-            index = 0;
+            index = 0; // Reinicia el índice si se excede
         }
         updateCarousel();
     }
@@ -22,5 +22,5 @@ document.addEventListener('DOMContentLoaded', function() {
         track.style.transform = `translateX(${offset}px)`;
     }
 
-    setInterval(nextSlide, 3000); // Cambia la imagen cada 3 segundos (3000 ms)
+    setInterval(nextSlide, 3000); // Cambia las imágenes cada 3 segundos (3000 ms)
 });
