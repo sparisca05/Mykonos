@@ -152,6 +152,7 @@ ul {
     margin: 30px;
     right: 0;
     bottom: 0;
+    z-index: 1;
 }
 .container-intro-text{
     display: flex;
@@ -160,7 +161,6 @@ ul {
     justify-content: center;
     row-gap: 30px;
     height: 80vh;
-    padding: 0px 250px;
 }
 .home-image-container {
     height: 100vh;
@@ -215,18 +215,14 @@ ul {
 .carousel-container {
     overflow: hidden;
     width: 100%;
-    max-width: 1500px; /* Ajusta el ancho máximo según tus necesidades */
-    margin: 0 auto; /* Centra el carrusel horizontalmente */
 }
-
 .carousel-track {
     display: flex;
-    transition: transform 1s ease;
+    transition: transform 2s ease;
     align-items: center; /* Centra verticalmente las imágenes */
 }
-
 .carousel-image {
-    width: 33.33%; /* Cada imagen ocupa un tercio del contenedor */
+    width: 33.3%; /* Cada imagen ocupa un tercio del contenedor */
     height: auto; /* Ajusta la altura automáticamente */
     object-fit: contain; /* Ajusta la imagen para que quepa completamente dentro del contenedor */
     flex: 0 0 auto; /* Asegura que las imágenes no se redimensionen */

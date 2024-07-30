@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const slideWidth = track.getBoundingClientRect().width / 3; // Divide el ancho total por 3
 
     function nextSlide() {
-        index += 3; // Aumenta el índice en 3 para mostrar 3 imágenes
-        if (index >= totalSlides) {
+        index += 1; // Aumenta el índice en 3 para mostrar 3 imágenes
+        if (index >= totalSlides - 2) {
             index = 0; // Reinicia el índice si se excede
         }
         updateCarousel();
@@ -22,5 +22,5 @@ document.addEventListener('DOMContentLoaded', function() {
         track.style.transform = `translateX(${offset}px)`;
     }
 
-    setInterval(nextSlide, 3000); // Cambia las imágenes cada 3 segundos (3000 ms)
+    setInterval(nextSlide, 4000); // Cambia las imágenes cada 3 segundos (3000 ms)
 });
