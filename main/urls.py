@@ -10,4 +10,9 @@ urlpatterns = [
     path('ubciacion/', views.ubicacion),
     path('cabanacompleta/', views.cabanacompleta),
     path('contactanos/', views.contactanos),
+    path('afrodita/', views.afrodita),
+    path('eros/', views.eros),
+    path('zeus/', views.zeus),
+    path('poseidon/', views.poseidon),
+    path('atenea/', views.atenea),
 ]

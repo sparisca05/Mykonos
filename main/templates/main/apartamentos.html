@@ -6,22 +6,42 @@
     <h1 class="right">Apartamentos</h1>
     <div class="grid-aptos">
         <div class="row1">
-            <a class="afrodita-bg" href="/">
-                <h2 style="border-bottom-left-radius: 20px;">Afrodita</h2>
+            <a class="afrodita-bg" href="/afrodita" onmouseenter="displayInfoApto('title-afrodita', 'info-afrodita')" onmouseleave="hideInfoApto('title-afrodita', 'info-afrodita')">
+                <h2 id="title-afrodita" style="border-bottom-left-radius: 20px;">Afrodita</h2>
+                <div id="info-afrodita">
+                    <h1>Afrodita</h1>
+                    <p>9<img src="{% static 'Imagenes/icono persona.png' %}" alt=""></p>
+                </div>
             </a>
-            <a class="eros-bg" href="/">
-                <h2 style="border-top-left-radius: 20px;">Eros</h2>
+            <a class="eros-bg" href="/zeus" onmouseenter="displayInfoApto('title-eros', 'info-eros')" onmouseleave="hideInfoApto('title-eros', 'info-eros')">
+                <h2 id="title-eros" style="border-top-left-radius: 20px;">Eros</h2>
+                <div id="info-eros">
+                    <h1>Eros</h1>
+                    <p>2<img src="{% static 'Imagenes/icono persona.png' %}" alt=""></p>
+                </div>
             </a>
-            <a class="zeus-bg" href="/">
-                <h2 style="border-bottom-left-radius: 20px;">Zeus</h2>
+            <a class="zeus-bg" href="/eros" onmouseenter="displayInfoApto('title-zeus', 'info-zeus')" onmouseleave="hideInfoApto('title-zeus', 'info-zeus')">
+                <h2 id="title-zeus" style="border-bottom-left-radius: 20px;">Zeus</h2>
+                <div id="info-zeus">
+                    <h1>Zeus</h1>
+                    <p>12<img src="{% static 'Imagenes/icono persona.png' %}" alt=""></p>
+                </div>
             </a>
         </div>
         <div class="row2">
-            <a class="poseidon-bg" href="/">
-                <h2 style="border-bottom-right-radius: 20px;">Poseidon</h2>
+            <a class="poseidon-bg" href="/poseidon" onmouseenter="displayInfoApto('title-poseidon', 'info-poseidon')" onmouseleave="hideInfoApto('title-poseidon', 'info-poseidon')">
+                <h2 id="title-poseidon" style="border-bottom-right-radius: 20px;">Poseidon</h2>
+                <div id="info-poseidon">
+                    <h1>Poseidon</h1>
+                    <p>9<img src="{% static 'Imagenes/icono persona.png' %}" alt=""></p>
+                </div>
             </a>
-            <a class="atenea-bg" href="/">
-                <h2 style="border-top-right-radius: 20px;">Atenea</h2>
+            <a class="atenea-bg" href="/atenea" onmouseenter="displayInfoApto('title-atenea', 'info-atenea')" onmouseleave="hideInfoApto('title-atenea', 'info-atenea')">
+                <h2 id="title-atenea" style="border-top-right-radius: 20px;">Atenea</h2>
+                <div id="info-atenea">
+                    <h1>Atenea</h1>
+                    <p>10<img src="{% static 'Imagenes/icono persona.png' %}" alt=""></p>
+                </div>
             </a>
         </div>
     </div>

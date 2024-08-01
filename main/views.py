@@ -8,9 +8,6 @@ def home(request):
 def apartamentos(request):
     return render(request, "main/apartamentos.html")
 
-def apto(request):
-    return render(request, "main/apto.html")
-
 def servicios(request):
     return render(request, "main/servicios.html")
 
@@ -28,3 +25,14 @@ def cabanacompleta(request):
 
 def contactanos(request):
     return render(request, "main/contactanos.html")
+
+def afrodita(request):
+    return render(request, "main/afrodita.html")
+def eros(request):
+    return render(request, "main/eros.html")
+def zeus(request):
+    return render(request, "main/zeus.html")
+def poseidon(request):
+    return render(request, "main/poseidon.html")
+def atenea(request):
+    return render(request, "main/atenea.html")

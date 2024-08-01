@@ -2,6 +2,18 @@ function toggleMenu(){
     var navLinks = document.getElementById('nav-items');
     navLinks.classList.toggle('hidden');
 }
+function displayInfoApto(idTitle, idInfo){
+    var title = document.getElementById(idTitle);
+    var info = document.getElementById(idInfo);
+    info.style.display = 'flex';
+    title.style.display = 'none';
+}
+function hideInfoApto(idTitle, idInfo){
+    var title = document.getElementById(idTitle);
+    var info = document.getElementById(idInfo);
+    info.style.display = 'none';
+    title.style.display = 'block';
+}
 document.addEventListener('DOMContentLoaded', function() {
     const track = document.querySelector('.carousel-track');
     let index = 0;
