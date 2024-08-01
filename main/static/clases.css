@@ -211,6 +211,14 @@ ul {
     margin: 20px 0px;
     background-color: #A5D3EE;
 }
+.container-galería{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+    height: 80vh;
+}
 .carousel-container {
     overflow: hidden;
     width: 100%;
