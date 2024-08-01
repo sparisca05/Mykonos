@@ -31,12 +31,10 @@ ul {
 }
 .left {
     align-items: flex-start;
-    align-self: flex-start;
     text-align: left;
 }
 .right {
     align-items: flex-end;
-    align-self: flex-end;
     text-align: right;
 }
 
