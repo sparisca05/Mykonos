@@ -194,6 +194,7 @@ ul {
     cursor: pointer;
     font-family: 'RiotSquad';
 }
+
 .diapo-text {
     width: 50%;
     padding: 0px 70px;
@@ -398,6 +399,48 @@ ul {
 }
 #info-afrodita, #info-eros, #info-zeus, #info-poseidon, #info-atenea {
     display: none;
+}
+/*------------------- Estilos cada apto -------------------------*/
+.grid-img-apto {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+}
+.row-apto{
+    display: flex;
+    min-width: 220px;
+    text-align: center;
+    text-decoration: none;
+    column-gap: 10px;
+}
+.row-apto div {
+
+}
+.row-apto img {
+    width: 100%;
+    height: auto;
+}
+.distribucion {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.distribucion img {
+    margin: 30px;
+    width: 45%;
+}
+.iconosApto {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 220px;
+    text-align: center;
+    text-decoration: none;
+    column-gap: 10px;
+}
+.iconosApto img {
+    width: 40px;
 }
 .container-fluid{
     display: flex;
