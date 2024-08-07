@@ -246,7 +246,7 @@ ul {
 }
 .iconos {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     column-gap: 30px;
     padding: 50px 10%;
     flex-wrap: wrap;
@@ -400,7 +400,8 @@ ul {
 #info-afrodita, #info-eros, #info-zeus, #info-poseidon, #info-atenea {
     display: none;
 }
-/*------------------- Estilos cada apto -------------------------*/
+
+/* ---------------------- Single apartment styles ---------------------- */
 .grid-img-apto {
     margin-top: 70px;
     display: flex;
@@ -414,33 +415,52 @@ ul {
     text-decoration: none;
     column-gap: 10px;
 }
-.row-apto div {
-
-}
 .row-apto img {
     width: 100%;
     height: auto;
 }
 .distribucion {
-    margin: 30px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
+    row-gap: 50px;
     align-items: center;
 }
 .distribucion img {
-    margin: 30px;
     width: 45%;
 }
-.iconosApto {
+.iconos-apto {
     display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: space-around;
+    row-gap: 50px;
     flex-wrap: wrap;
-    min-width: 220px;
-    text-align: center;
-    text-decoration: none;
-    column-gap: 10px;
 }
-.iconosApto img {
-    width: 40px;
+.row-iconos-apto {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 10%;
+}
+.row-iconos-apto div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7vw;
+    height: 7vw;
+    border-radius: 50%;
+    background-blend-mode: multiply;
+}
+.row-iconos-apto div:hover {
+    background-color: #183d63b0;
+}
+.row-iconos-apto p {
+    display: none;
+    font-size: 5vw;
+    margin: 0;
+    text-align: center;
+    font-family: 'RiotSquad';
+    color: white;
 }
 .container-fluid{
     display: flex;
