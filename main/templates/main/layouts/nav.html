@@ -182,17 +182,17 @@
             </li>
             <div></div>
         </ul>
-        <div class="container-fluid">
-            <a href="/#" style="margin: 0px 30px 50px 30px">
+        <div class="container-nav">
+            <a href="/#" class="logo-nav">
                 <img src="{% static 'Imagenes/LOGO ENCABEZADO.png' %}" class="imagen-logo" id="logo" alt="logo">
             </a>
-            <div class="navbar-container">
-                <a href="#" class="reservar">
-                    <img style="height: min(70px, 5vw); min-height: 50px;" src="{% static 'Imagenes/reservar ahora encabezado.png' %}" alt="">
+            <div class="navbar-elements">
+                <a href="#" class="reservar">   
+                    <img src="{% static 'Imagenes/reservar ahora encabezado.png' %}" alt="Reservar">
                 </a>
                 <div class="menu" id="menu">
-                    <div class="navbar-toggler" onclick="toggleMenu()">
-                        <img style="height: min(50px, 4vw); min-height: 40px;" src="{% static 'Imagenes/ICONO MENU ENCABEZADO.png' %}" alt="Menú">
+                    <div class="menu-toggler" onclick="toggleMenu()">
+                        <img src="{% static 'Imagenes/ICONO MENU ENCABEZADO.png' %}" alt="Menú">
                     </div>
                 </div>
             </div>
@@ -204,7 +204,9 @@
     {% block content %}
     {% endblock %}
     <div class="container-footer footer-bg">
-        <img class="imagen-logo img-grande" src="{% static 'Imagenes/LOGO PIE DE PAGINA.png'%}" alt="Mykonos">
+        <div class="logo-footer">
+            <img src="{% static 'Imagenes/LOGO PIE DE PAGINA.png'%}" alt="Mykonos">
+        </div>
         <div class="footer">
             <div class="footer-col">
                 <div>
@@ -253,8 +255,8 @@
             </div>
         </div>
         <div style="display: flex; align-items: center;">
-            <a href="#" class="reservar" onclick="document.location='/contact'">
-                <img class="reservar-footer" src="{% static 'Imagenes/RESERVAR AHORA pie de pagina.png' %}" alt="">
+            <a href="#" class="reservar-footer" onclick="document.location='/contact'">
+                <img src="{% static 'Imagenes/RESERVAR AHORA pie de pagina.png' %}" alt="Reservar">
             </a>
         </div>
     </div>
