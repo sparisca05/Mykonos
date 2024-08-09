@@ -168,7 +168,7 @@ ul {
     bottom: 0;
     z-index: 1;
     width: 5%;
-    min-width: 100px;
+    min-width: 50px;
 }
 .contacto-wpp img {
     width: 100%;
