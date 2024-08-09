@@ -48,7 +48,7 @@ ul {
     background-color: #00000000;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 }
 .container-nav{
     display: flex;
@@ -167,6 +167,11 @@ ul {
     right: 0;
     bottom: 0;
     z-index: 1;
+    width: 5%;
+    min-width: 100px;
+}
+.contacto-wpp img {
+    width: 100%;
 }
 .container-intro-text{
     display: flex;
@@ -427,6 +432,9 @@ ul {
 }
 
 /* ---------------------- Single apartment styles ---------------------- */
+.p-small {
+    font-size: max(2vw, 24px);
+}
 .grid-img-apto {
     margin-top: 70px;
     display: flex;
