@@ -78,6 +78,10 @@ ul {
     visibility: visible;
     transition: opacity 0.3s, visibility 0.3s;
 }
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
 .navbar-nav button {
     background: none;
     border: none;
@@ -168,7 +172,7 @@ ul {
     bottom: 0;
     z-index: 1;
     width: 5%;
-    min-width: 50px;
+    min-width: 100px;
 }
 .contacto-wpp img {
     width: 100%;
@@ -204,7 +208,7 @@ ul {
     object-fit: cover;
     width: 100%;
 }
-.diapositiva button{
+.diapositiva a {
     background-color: #183d63;
     color: white;
     border: none;
@@ -214,6 +218,7 @@ ul {
     font-weight: lighter;
     cursor: pointer;
     font-family: 'RiotSquad';
+    text-decoration: none;
 }
 
 .diapo-text {
@@ -495,42 +500,8 @@ ul {
     font-family: 'RiotSquad';
     color: white;
 }
-.hidden {
-    visibility: hidden;
-    opacity: 0;
-}
-.dark {
-    color: #183d63;
-    border-color: #183d63;
-}
-.big {
-    width: 17vw;
-    min-width: 280px;
-    height: 5vw;
-    min-height: 70px;
-}
-.container-atributos {
-    height: 80vh;
-    padding: 5vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.atributo {
-    width: fit-content;
-    height: fit-content;
-    color: #3A7EBD;
-    font-size: max(3vw,28px);
-    transition: color 0.6s ease, box-shadow 0.6s ease;
-    text-transform: uppercase;
-    padding: 20px 50px;
-    margin: 0px 50px;
-    text-align: center;
-}
-.atributo:hover {
-    color: #3A7EBD91;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
+
+
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -568,177 +539,10 @@ ul {
     transition: background-color 0.6s ease;
     cursor: pointer;
 }
-.active {
-    background-color: #717171;
-}
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-@keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-}
-.slider1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px 5%;
-    height: 40vw;
-    min-height: 470px;
-}
-.slide {
-    width: 100%;
-    display: none;
-}
-.fondo-logo-slide {
-    background-color: white;
-    width: 30vw;
-    min-width: 223px;
-    max-width: 300px;
-    border-bottom-right-radius: 80px;
-}
-.container-data {
-    display: flex;
-    justify-content: space-evenly;
-    padding: max(12vw, 70px);
-}
-.data {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.data-icon {
-    width: 6vw;
-    min-width: 60px;
-}
-.slider2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 70%;
-    height: calc(100vh - max(5vw,60px));
-}
-.container-proyecto {
-    display: flex;
-    padding-top: max(5vw, 60px);
-    height: calc(100vh - max(5vw,60px));
-}
-.logo-proyecto {
-    width: 300px;
-}
-.info-proyecto {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: 100%;
-    align-items: center;
-}
-.vis {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #4DB0CB;
-    display: flex;
-    position: fixed;
-    right: 30%;
-    align-items: center;
-    justify-content: center;
-    font-weight: 800;
-    color: #3A7EBD;
-    margin: 20px;
-    font-size: x-large;
-}
-.overlayN {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(255, 255, 255, 0.5); /* Adjust the opacity as needed */
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    align-content: center;
-    margin-right: 305px;
-    padding-top: 50px;
-}
 
-.bifTitulosN {
-    font-size: 75px;
-    margin-top: 110px;
-    color: white;
-    text-align: right;
-    margin-right: 150px;
-}
 
-.titulodeCuadroN {
-    font-size: 28px;
-    margin-top: 40px;
-    color: #3A7EBD;
-    text-align: center;
-}
 
-.TextoN {
-    font-size: 20px;
-    text-align: justify;
-    color: #3A7EBD;
-}
-
-.sectionN {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-.titleN {
-    font-size: 72px;
-    color: #3A7EBD;
-    margin-bottom: 10px;
-    background-color: white;
-}
-
-.paragraphN {
-    font-size: 35px;
-    color: white;
-    padding: 10px;
-    font-family: Po;
-}
-.contadores-principales {
-    display: flex;
-    justify-content: space-around;
-    color: white;
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    flex-wrap: wrap;
-}
-.texto-contador {
-    font-size: 20px;
-    text-align: center;
-    color: #3A7EBD;
-    text-transform: uppercase;
-}
-  .disguise {
-    opacity: 0;
-  }
-  
-  .animate {
-    animation: appear 1.3s ease;
-  }
-  .contador {
-    margin: 30px;
-    text-align: center;
-    display: inline-block;
-    color: #3A7EBD;
-  }
-  
-  .contador-cantidad {
-    font-size: 50px;
-    margin: 10px 0;
-    font-weight: 900;
-    color: #3A7EBD;
-  }
-
+/* ---------------------- Responsive styles ---------------------- */
 @media only screen and (max-width: 1100px) {
     .reservar-footer {
         min-height: 80px;
@@ -759,22 +563,3 @@ ul {
         margin-right: 10vw;
     }
 }
-@media only screen and (max-width: 650px) {
-  
-    .TextoN {
-      font-size: 20px; 
-    }
-    .paragraphN {
-        font-size: 15px;
-    }
-    .titleN {
-        font-size: 32px;
-    }
-  }
-  
-  @media only screen and (min-width: 651px) {
-    
-    .TextoN {
-      font-size: 35px; 
-    }
-  }
