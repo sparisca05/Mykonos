@@ -167,15 +167,13 @@ ul {
 }
 .contacto-wpp {
     position: fixed;
-    margin: 30px;
+    margin: 25px;
     right: 0;
     bottom: 0;
     z-index: 1;
-    width: 5%;
-    min-width: 100px;
 }
 .contacto-wpp img {
-    width: 100%;
+    width: 50px;
 }
 .container-intro-text{
     display: flex;
