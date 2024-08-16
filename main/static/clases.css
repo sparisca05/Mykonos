@@ -4,7 +4,7 @@ html {
 body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 28px;
+    font-size: 30px;
 }
 h1 {
     font-size: max(4vw, 40px);
@@ -40,10 +40,6 @@ ul {
 
 /*---------------------- Home page styles ----------------------*/
 
-.menu-icon {
-    height: 30px;
-    width: 30px;
-}
 .navbar {
     background-color: #00000000;
     position: fixed;
@@ -171,7 +167,7 @@ ul {
     z-index: 1;
 }
 .contacto-wpp img {
-    width: 50px;
+    width: 75px;
 }
 .container-intro-text{
     display: flex;
@@ -207,6 +203,7 @@ ul {
 .diapositiva a {
     background-color: #183d63;
     color: white;
+    width: max-content;
     border: none;
     padding: 10px 20px;
     border-radius: 10px;
@@ -442,9 +439,6 @@ ul {
 }
 
 /* ---------------------- Single apartment styles ---------------------- */
-.p-small {
-    font-size: max(2vw, 24px);
-}
 .grid-img-apto {
     margin-top: 70px;
     display: flex;
@@ -548,6 +542,20 @@ ul {
 
 
 /* ---------------------- Responsive styles ---------------------- */
+@media only screen and (min-width: 1600px) {
+    .navbar-bg-image {
+        height: 220px;
+    }
+    .container-nav {
+        height: 170px;
+    }
+    .logo-nav {
+        margin: 0 50px;
+    }
+    .logo-nav img {
+        height: 140px;
+    }
+}
 @media only screen and (max-width: 1000px) {
     .navbar-bg-image {
         height: 180px;
@@ -561,6 +569,9 @@ ul {
     .logo-nav img {
         height: 110px;
     }
+    .contacto-wpp img {
+        width: 50px;
+    }
     .reservar-footer {
         min-height: 80px;
     }
@@ -570,6 +581,9 @@ ul {
     }
 }
 @media only screen and (max-width: 778px) {
+    body {
+        font-size: 24px;
+    }
     .navbar-bg-image {
         height: 150px;
     }
@@ -581,5 +595,23 @@ ul {
     }
     .logo-nav img {
         height: 90px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .navbar-bg-image {
+        height: 130px;
+    }
+    .container-nav {
+        height: 90px;
+        padding: 15px;
+    }
+    .logo-nav {
+        margin: 0 10px;
+    }
+    .logo-nav img {
+        height: 70px;
+    }
+    .reservar {
+        display: none;
     }
 }
