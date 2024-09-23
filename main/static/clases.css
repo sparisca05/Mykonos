@@ -38,7 +38,7 @@ ul {
     text-align: right;
 }
 
-/*---------------------- Home page styles ----------------------*/
+/* ---------------------------------------------------------- Home page styles ---------------------------------------------------------- */
 
 .navbar {
     background-color: #00000000;
@@ -178,6 +178,9 @@ ul {
     height: 80vh;
     padding: 0 10%;
 }
+.container-intro-text p {
+    font-weight: 600;
+}
 .home-image-container {
     height: 100vh;
     display: flex;
@@ -262,7 +265,7 @@ ul {
     align-self: flex-end;
     padding: 0px 10%;
     font-family: 'BeyondInfinity';
-    font-size: max(6vw, 60px);
+    font-size: max(6vw, 70px);
     color: #183d63;
     margin-bottom: 0;
 }
@@ -358,7 +361,11 @@ ul {
     color: black;
 }
 
-/* ---------------------- Apartamentos page styles ----------------------*/
+/* ---------------------------------------------------------- Apartamentos page styles ---------------------------------------------------------- */
+.container-aptos {
+    padding: 7%;
+    padding-top: 200px;
+}
 .grid-aptos {
     display: flex;
     flex-wrap: wrap;
@@ -438,7 +445,7 @@ ul {
     display: none;
 }
 
-/* ---------------------- Single apartment styles ---------------------- */
+/* ---------------------------------------------------------- Single apartment styles ---------------------------------------------------------- */
 .grid-img-apto {
     margin-top: 70px;
     display: flex;
@@ -539,12 +546,56 @@ ul {
     cursor: pointer;
 }
 
+/* ---------------------------------------------------------- Servicios styles ---------------------------------------------------------- */
+.container-servicios {
+    padding-top: 200px;
+}
+.intro-servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    background-color: #a5d3ee46;
+    padding-bottom: 30px;
+}
+.intro-servicios h1 {
+    align-self: unset;
+}
+.iconos-servicios {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.iconos-servicios > div {
+    margin: 60px 7%;
+    max-width: 1062px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+}
+.iconos-servicios > div > div {
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+.iconos-servicios div img {
+    width: 135px;
+}
 
 
-/* ---------------------- Responsive styles ---------------------- */
+/* ---------------------------------------------------------- Responsive styles ---------------------------------------------------------- */
 @media only screen and (min-width: 1600px) {
     .navbar-bg-image {
         height: 220px;
+    }
+    .container-aptos, .container-servicios {
+        padding-top: 220px;
     }
     .container-nav {
         height: 170px;
@@ -557,8 +608,14 @@ ul {
     }
 }
 @media only screen and (max-width: 1000px) {
-    .navbar-bg-image {
+    body {
+        font-size: 28px;
+    }
+    .navbar-bg-image{
         height: 180px;
+    }
+    .container-aptos, .container-servicios {
+        padding-top: 180px;
     }
     .container-nav {
         height: 130px;
@@ -571,6 +628,9 @@ ul {
     }
     .contacto-wpp img {
         width: 50px;
+    }
+    .row-iconos-servicios {
+        flex-direction: column;
     }
     .reservar-footer {
         min-height: 80px;
@@ -587,6 +647,9 @@ ul {
     .navbar-bg-image {
         height: 150px;
     }
+    .container-aptos, .container-servicios {
+        padding-top: 150px;
+    }
     .container-nav {
         height: 110px;
     }
@@ -600,6 +663,9 @@ ul {
 @media only screen and (max-width: 700px) {
     .navbar-bg-image {
         height: 130px;
+    }
+    .container-aptos, .container-servicios {
+        padding-top: 130px;
     }
     .container-nav {
         height: 90px;
