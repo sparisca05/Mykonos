@@ -1,100 +1,157 @@
-{% extends 'main/layouts/nav.html' %}
-
-{% load static %}
-{% block content %}
+{% extends 'main/layouts/nav.html' %} {% load static %} {% block content %}
 <head>
-	<title>Servicios - Mykonos Aparta Hotel</title>
+  <title>Servicios - Mykonos Aparta Hotel</title>
 </head>
 <div class="container-servicios">
-	<div class="header-servicios intro-servicios">
-		<h1>Conoce nuestros servicios</h1>
-		<p>
-			En Mykonos Apartahotel nos enorgullecemos de ofrecer una variedad de excelentes comodidades diseñadas
-			para hacer de tu estadía una experiencia inolvidable. Ya sea que nos visites para relajarte o disfrutar de la playa,
-			nuestras instalaciones completas garantizan tu confort en todo momento. Disfruta de una refrescante piscina y un
-			relajante jacuzzi, además de acceso directo a las cristalinas aguas del mar Caribe. Nuestro parqueadero privado
-			asegura la comodidad de quienes nos visitan en vehículo.
-			<br>
-			Nuestro equipo se compromete a brindarte un servicio cálido y personalizado, haciendo que cada detalle de tu
-			estancia sea excepcional.
-		</p>
-	</div>
-	<div  class="iconos-servicios">
-		<div>
-			<div>
-				<img src="{% static 'Imagenes/Servicios/logos/LOGO PISCINA-10.png' %}" alt="piscina">
-			</div>
-			<div>
-				<img src="{% static 'Imagenes/Servicios/logos/LOGO PLAYA-10.png' %}" alt="playa">
-			</div>
-			<div>
-				<img src="{% static 'Imagenes/Servicios/logos/LOGO KIOSKO.png' %}" alt="kiosko">
-			</div>
-			<div>
-				<img src="{% static 'Imagenes/Servicios/logos/LOGO JACUZZI.png' %}" alt="jacuzzi">
-			</div>
-			<div>
-				<img src="{% static 'Imagenes/Servicios/logos/LOGO HAMACAS.png' %}" alt="hamacas">
-			</div>
-			<div>
-				<img src="{% static 'Imagenes/Servicios/logos/LOGO PARQUEADERO.png' %}" alt="parqueadero">
-			</div>
+  <div class="header-servicios intro-servicios">
+    <h1>Conoce nuestros servicios</h1>
+    <p>
+      En Mykonos Apartahotel nos enorgullecemos de ofrecer una variedad de
+      excelentes comodidades diseñadas para hacer de tu estadía una experiencia
+      inolvidable. Ya sea que nos visites para relajarte o disfrutar de la
+      playa, nuestras instalaciones completas garantizan tu confort en todo
+      momento. Disfruta de una refrescante piscina y un relajante jacuzzi,
+      además de acceso directo a las cristalinas aguas del mar Caribe. Nuestro
+      parqueadero privado asegura la comodidad de quienes nos visitan en
+      vehículo.
+      <br />
+      Nuestro equipo se compromete a brindarte un servicio cálido y
+      personalizado, haciendo que cada detalle de tu estancia sea excepcional.
+    </p>
+  </div>
+  <div class="iconos-servicios">
+    <div>
+      <div>
+        <img
+          src="{% static 'Imagenes/Servicios/logos/LOGO PISCINA-10.png' %}"
+          alt="piscina"
+        />
+      </div>
+      <div>
+        <img
+          src="{% static 'Imagenes/Servicios/logos/LOGO PLAYA-10.png' %}"
+          alt="playa"
+        />
+      </div>
+      <div>
+        <img
+          src="{% static 'Imagenes/Servicios/logos/LOGO KIOSKO.png' %}"
+          alt="kiosko"
+        />
+      </div>
+      <div>
+        <img
+          src="{% static 'Imagenes/Servicios/logos/LOGO JACUZZI.png' %}"
+          alt="jacuzzi"
+        />
+      </div>
+      <div>
+        <img
+          src="{% static 'Imagenes/Servicios/logos/LOGO HAMACAS.png' %}"
+          alt="hamacas"
+        />
+      </div>
+      <div>
+        <img
+          src="{% static 'Imagenes/Servicios/logos/LOGO PARQUEADERO.png' %}"
+          alt="parqueadero"
+        />
+      </div>
 
-			<div>
-				<img src="{% static 'Imagenes/Servicios/logos/LOGO TERRAZA.png' %}" alt="terraza">
-			</div>
-			<div>
-				<img src="{% static 'Imagenes/Servicios/logos/LOGO MAR.png' %}" alt="mar">
-			</div>
-			<div>
-				<img src="{% static 'Imagenes/Servicios/logos/LOGO DUCHAS EXTERIORES.png' %}" alt="duchas exteriores">
-			</div>
-			<div>
-				<img src="{% static 'Imagenes/Servicios/logos/LOGO WIFI.png' %}" alt="wifi">
-			</div>
-			<div>
-				<img src="{% static 'Imagenes/Servicios/logos/LOGO CARPAS.png' %}" alt="carpas">
-			</div>
-			<div>
-				<img src="{% static 'Imagenes/Servicios/logos/LOGO ZONAS DE ESTAR.png' %}" alt="zona de estar">
-			</div>
-		</div>
-	</div>
-	<div class="kiosko-section">
-		<div class="kiosko-image">
-		  <img src="{% static 'Imagenes\Servicios\IMAGEN KIOSKO.jpg' %}" alt="Kiosko">
-		</div>
-		<div class="kiosko-description">
-		  <h1>Kiosko</h1>
-		  <p>
-			Nuestro encantador kiosko ofrece un espacio perfecto para relajarse al aire libre. Rodeado de vegetación tropical y con una suave brisa marina, es el lugar ideal para disfrutar de la frescura natural de Coveñas. Diseñado para brindar comodidad, combina un estilo acogedor con vistas espectaculares, proporcionando un ambiente sereno para compartir momentos inolvidables.
-		  </p>
-		</div>
-	</div>
-	<div class="piscina-section">
-		<div class="piscina-description">
-		  <h1>Piscina</h1>
-		  <p>
-			La zona de la piscina es un oasis de frescura y relajación. Con comodidades distribuidas estratégicamente, es el lugar perfecto para disfrutar del sol. Ya sea sumergiéndote en las aguas cristalinas o tomando un respiro en nuestras áreas de sombra, encontrarás un espacio ideal para cada momento. El diseño de esta área invita a la tranquilidad, creando un ambiente fresco que hará de tu estancia una experiencia inolvidable.
-		  </p>
-		</div>
-		<div class="piscina-image">
-		  <img src="{% static 'Imagenes\Servicios\IMAGEN PISCINA.jpg'%}" alt="Piscina">
-		</div>
-	</div>
-	<div class="playa-section">
-		<div class="playa-image">
-		  <img src="{% static 'Imagenes\Servicios\IMAGEN PLAYA.jpg'%}" alt="Playa">
-		</div>
-		<div class="playa-description">
-		  <h1>Playa</h1>
-		  <p>
-			A solo unos pasos de tu apartamento, disfruta de una playa limpia y tranquila, frente al mar. Relájate bajo la sombra de nuestros kioskos mientras sientes la brisa marina y el suave sonido de las olas. Un espacio perfecto para descansar y disfrutar de la belleza natural	
-		  </p>
-		</div>
-	</div>
-	  
-	  
+      <div>
+        <img
+          src="{% static 'Imagenes/Servicios/logos/LOGO TERRAZA.png' %}"
+          alt="terraza"
+        />
+      </div>
+      <div>
+        <img
+          src="{% static 'Imagenes/Servicios/logos/LOGO MAR.png' %}"
+          alt="mar"
+        />
+      </div>
+      <div>
+        <img
+          src="{% static 'Imagenes/Servicios/logos/LOGO DUCHAS EXTERIORES.png' %}"
+          alt="duchas exteriores"
+        />
+      </div>
+      <div>
+        <img
+          src="{% static 'Imagenes/Servicios/logos/LOGO WIFI.png' %}"
+          alt="wifi"
+        />
+      </div>
+      <div>
+        <img
+          src="{% static 'Imagenes/Servicios/logos/LOGO CARPAS.png' %}"
+          alt="carpas"
+        />
+      </div>
+      <div>
+        <img
+          src="{% static 'Imagenes/Servicios/logos/LOGO ZONAS DE ESTAR.png' %}"
+          alt="zona de estar"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="servicio-section">
+    <div class="servicio-image">
+      <img
+        src="{% static 'Imagenes\Servicios\IMAGEN KIOSKO.jpg' %}"
+        alt="Kiosko"
+      />
+    </div>
+    <div class="servicio-description">
+      <h1>Kiosko</h1>
+      <p>
+        Nuestro encantador kiosko ofrece un espacio perfecto para relajarse al
+        aire libre. Rodeado de vegetación tropical y con una suave brisa marina,
+        es el lugar ideal para disfrutar de la frescura natural de Coveñas.
+        Diseñado para brindar comodidad, combina un estilo acogedor con vistas
+        espectaculares, proporcionando un ambiente sereno para compartir
+        momentos inolvidables.
+      </p>
+    </div>
+  </div>
+  <div class="servicio-section" style="background-color: unset;">
+    <div class="servicio-description">
+      <h1 class="right">Piscina</h1>
+      <p>
+        La zona de la piscina es un oasis de frescura y relajación. Con
+        comodidades distribuidas estratégicamente, es el lugar perfecto para
+        disfrutar del sol. Ya sea sumergiéndote en las aguas cristalinas o
+        tomando un respiro en nuestras áreas de sombra, encontrarás un espacio
+        ideal para cada momento. El diseño de esta área invita a la
+        tranquilidad, creando un ambiente fresco que hará de tu estancia una
+        experiencia inolvidable.
+      </p>
+    </div>
+    <div class="servicio-image">
+      <img
+        src="{% static 'Imagenes\Servicios\IMAGEN PISCINA.jpg'%}"
+        alt="Piscina"
+      />
+    </div>
+  </div>
+  <div class="servicio-section">
+    <div class="servicio-image">
+      <img
+        src="{% static 'Imagenes\Servicios\IMAGEN PLAYA.jpg'%}"
+        alt="Playa"
+      />
+    </div>
+    <div class="servicio-description">
+      <h1>Playa</h1>
+      <p>
+        A solo unos pasos de tu apartamento, disfruta de una playa limpia y
+        tranquila, frente al mar. Relájate bajo la sombra de nuestros kioskos
+        mientras sientes la brisa marina y el suave sonido de las olas. Un
+        espacio perfecto para descansar y disfrutar de la belleza natural
+      </p>
+    </div>
+  </div>
 </div>
 
 {% endblock %}

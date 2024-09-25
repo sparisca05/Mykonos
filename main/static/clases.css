@@ -585,94 +585,36 @@ ul {
     padding: 0 20px;
 }
 .iconos-servicios div img {
-    width: 135px;
+    width: 115px;
 }
-.kiosko-section {
+.servicio-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #a5d3ee46;
     padding: 20px;
     margin-bottom: 40px;
-  }
-  
-  .kiosko-image img {
+}
+.servicio-image img {
     width: 100%;
     max-width: 600px;
-  }
+}
   
-  .kiosko-description {
+.servicio-description {
     max-width: 50%;
-    margin-left: 20px;
+    padding: 0 30px;
     text-align: justify;
-  }
-  
-  .kiosko-description h2 {
+}
+
+.servicio-description h2 {
     font-size: 2.5rem;
     color: #002855; 
     margin-bottom: 10px;
-  }
-  
-  .kiosko-description p {
-    
-  }
-  .piscina-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    margin-bottom: 40px;
-  }
-  
-  .piscina-description {
-    max-width: 50%;
-    margin-right: 20px;
-    text-align: right;
-    text-align: justify;
-  }
-  
-  .piscina-description h1 {
-    text-align: right;
-  }
-  
-  .piscina-description p {
-  }
-  
-  .piscina-image img {
-    width: 100%;
-    max-width: 600px;
-  }
-  /* Playa styles */
-.playa-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #a5d3ee46;
-    padding: 20px;
-    margin-bottom: 40px;
-  }
-  
-  .playa-image img {
-    width: 100%;
-    max-width: 600px;
-  }
-  
-  .playa-description {
-    max-width: 50%;
-    margin-left: 20px;
-    text-align: justify;
-  }
-  
-  .playa-description h2 {
-    font-size: 2.5rem;
-    color: #002855;
-    margin-bottom: 10px;
-  }
-  
-  .playa-description p {
-  }
-  
-  
+}
+
+.servicio-description p {
+
+}
 
 /* ---------------------------------------------------------- Responsive styles ---------------------------------------------------------- */
 @media only screen and (min-width: 1600px) {
@@ -690,6 +632,9 @@ ul {
     }
     .logo-nav img {
         height: 140px;
+    }
+    .iconos-servicios div img {
+        width: 135px;
     }
 }
 @media only screen and (max-width: 1000px) {
@@ -717,6 +662,9 @@ ul {
     .row-iconos-servicios {
         flex-direction: column;
     }
+    .iconos-servicios div img {
+        width: 105px;
+    }
     .reservar-footer {
         min-height: 80px;
     }
@@ -734,6 +682,9 @@ ul {
     }
     .container-aptos, .container-servicios {
         padding-top: 150px;
+    }
+    .iconos-servicios div img {
+        width: 85px;
     }
     .container-nav {
         height: 110px;
