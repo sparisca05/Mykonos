@@ -161,13 +161,13 @@ ul {
 }
 .contacto-wpp {
     position: fixed;
-    margin: 25px;
+    margin: 20px;
     right: 0;
     bottom: 0;
     z-index: 1;
 }
 .contacto-wpp img {
-    width: 75px;
+    width: 60px;
 }
 .container-intro-text{
     display: flex;
@@ -180,6 +180,9 @@ ul {
 }
 .container-intro-text p {
     font-weight: 600;
+}
+.container-intro-text img {
+    height: max(150px, 11vw);
 }
 .home-image-container {
     height: 100vh;
@@ -304,11 +307,10 @@ ul {
     padding: 0px 120px;
     width: 60%;
     min-width: 400px;
-    height: 100%;
 }
 .map {
     width: 100%;
-    height: 100%;
+    height: 25vh;
     border: 0;
 }
 .container-footer {
@@ -621,6 +623,9 @@ ul {
     .navbar-bg-image {
         height: 220px;
     }
+    .container-verservicios img {
+        height: 80px;
+    }
     .container-aptos, .container-servicios {
         padding-top: 220px;
     }
@@ -636,13 +641,34 @@ ul {
     .iconos-servicios div img {
         width: 135px;
     }
+    .contacto-wpp {
+        margin: 25px;
+    }
+    .contacto-wpp img {
+        width: 75px;
+    }
 }
+@media only screen and (max-width: 1400px) {
+    body {
+        font-size: 26px;
+    }
+    .contacto-wpp {
+        margin: 15px;
+    }
+    .contacto-wpp img {
+        width: 55px;
+    }
+}
+
 @media only screen and (max-width: 1000px) {
     body {
-        font-size: 28px;
+        font-size: 24px;
     }
     .navbar-bg-image{
         height: 180px;
+    }
+    .container-verservicios img {
+        height: 60px;
     }
     .container-aptos, .container-servicios {
         padding-top: 180px;
@@ -655,6 +681,9 @@ ul {
     }
     .logo-nav img {
         height: 110px;
+    }
+    .contacto-wpp {
+        margin: 15px;
     }
     .contacto-wpp img {
         width: 50px;
@@ -675,7 +704,7 @@ ul {
 }
 @media only screen and (max-width: 778px) {
     body {
-        font-size: 24px;
+        font-size: 22px;
     }
     .navbar-bg-image {
         height: 150px;
