@@ -556,8 +556,8 @@ ul {
     align-items: center;
     justify-content: center;
     row-gap: 20px;
-    background-color: #a5d3ee46;
     padding-bottom: 30px;
+    background-color: #a5d3ee46;
 }
 .intro-servicios h1 {
     align-self: unset;
@@ -631,10 +631,8 @@ ul {
     text-align: justify;
   }
   
-  .piscina-description h2 {
-    font-size: 2.5rem;
-    color: #002855;
-    margin-bottom: 10px;
+  .piscina-description h1 {
+    text-align: right;
   }
   
   .piscina-description p {
