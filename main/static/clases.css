@@ -589,7 +589,7 @@ ul {
 }
 .servicio-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: #a5d3ee46;
     padding: 20px;
@@ -602,7 +602,7 @@ ul {
   
 .servicio-description {
     max-width: 50%;
-    padding: 0 30px;
+    padding: 0 40px;
     text-align: justify;
 }
 
