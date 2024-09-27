@@ -51,14 +51,14 @@ ul {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px;
-    height: 150px;
+    height: 120px;
 }
 .navbar-bg-image {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 200px;
+    height: 170px;
     z-index: -1;
 }
 .navbar-nav {
@@ -118,7 +118,7 @@ ul {
     margin: 0 50px;
 }
 .logo-nav img{
-    height: 120px;
+    height: 100px;
     align-self: center;
 }
 .navbar-elements {
@@ -303,14 +303,14 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 50px;
+    row-gap: 20px;
     padding: 0px 120px;
     width: 60%;
     min-width: 400px;
 }
 .map {
     width: 100%;
-    height: 25vh;
+    height: 30vh;
     border: 0;
 }
 .container-footer {
@@ -475,6 +475,11 @@ ul {
 .distribucion img {
     width: 45%;
 }
+.planos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .iconos-apto {
     display: flex;
     flex-direction: column;
@@ -486,14 +491,13 @@ ul {
 .row-iconos-apto {
     display: flex;
     justify-content: space-around;
-    column-gap: 10%;
 }
 .row-iconos-apto div {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 7vw;
-    height: 7vw;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     background-blend-mode: multiply;
 }
@@ -502,7 +506,7 @@ ul {
 }
 .row-iconos-apto p {
     display: none;
-    font-size: 5vw;
+    font-size: 4vw;
     margin: 0;
     text-align: center;
     font-family: 'RiotSquad';
@@ -638,6 +642,10 @@ ul {
     .logo-nav img {
         height: 140px;
     }
+    .row-iconos-apto div {
+        width: 120px;
+        height: 120px;
+    }
     .iconos-servicios div img {
         width: 135px;
     }
@@ -652,6 +660,10 @@ ul {
     body {
         font-size: 26px;
     }
+    .row-iconos-apto div {
+        width: 90px;
+        height: 90px;
+    }
     .contacto-wpp {
         margin: 15px;
     }
@@ -665,22 +677,26 @@ ul {
         font-size: 24px;
     }
     .navbar-bg-image{
-        height: 180px;
+        height: 130px;
+    }
+    .row-iconos-apto div {
+        width: 70px;
+        height: 70px;
     }
     .container-verservicios img {
         height: 60px;
     }
     .container-aptos, .container-servicios {
-        padding-top: 180px;
+        padding-top: 150px;
     }
     .container-nav {
-        height: 130px;
+        height: 80px;
     }
     .logo-nav {
         margin: 0 30px;
     }
     .logo-nav img {
-        height: 110px;
+        height: 80px;
     }
     .contacto-wpp {
         margin: 15px;
@@ -709,12 +725,6 @@ ul {
     .navbar-bg-image {
         height: 150px;
     }
-    .container-aptos, .container-servicios {
-        padding-top: 150px;
-    }
-    .iconos-servicios div img {
-        width: 85px;
-    }
     .container-nav {
         height: 110px;
     }
@@ -723,6 +733,16 @@ ul {
     }
     .logo-nav img {
         height: 90px;
+    }
+    .row-iconos-apto div {
+        width: 55px;
+        height: 55px;
+    }
+    .container-aptos, .container-servicios {
+        padding-top: 150px;
+    }
+    .iconos-servicios div img {
+        width: 85px;
     }
 }
 @media only screen and (max-width: 700px) {
