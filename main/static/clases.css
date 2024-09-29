@@ -267,12 +267,14 @@ ul {
     flex-direction: column;
 }
 .header-servicios h1 {
-    text-align: end;
     padding: 0px 10%;
     font-family: 'BeyondInfinity';
     font-size: max(6vw, 70px);
     color: #183d63;
     margin-bottom: 0;
+}
+.iconos-bg .header-servicios h1 {
+    text-align: end;
 }
 .header-servicios p {
     margin: 0;
@@ -600,32 +602,8 @@ ul {
 .iconos-servicios div img {
     width: 115px;
 }
-.servicio-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.servicio-section-bg {
     background-color: #a5d3ee46;
-    padding: 20px;
-}
-.servicio-image img {
-    width: 100%;
-    max-width: 600px;
-}
-  
-.servicio-description {
-    max-width: 50%;
-    padding: 0 40px;
-    text-align: justify;
-}
-
-.servicio-description h2 {
-    font-size: 2.5rem;
-    color: #002855; 
-    margin-bottom: 10px;
-}
-
-.servicio-description p {
-
 }
 
 /* ---------------------------------------------------------- Responsive styles ---------------------------------------------------------- */
@@ -774,9 +752,6 @@ ul {
     }
     .iconos-bg {
         padding: 40px !important;
-    }
-    .header-servicios {
-        padding: 0;
     }
     .header-servicios h1 {
         padding: 0;
