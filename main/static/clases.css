@@ -5,6 +5,7 @@ body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
+    overflow-x: hidden;
 }
 h1 {
     font-size: max(4vw, 40px);
@@ -134,19 +135,14 @@ ul {
     cursor: pointer;
     height: fit-content;
     line-height: 1;
-    padding: 5px 10px;
-    font-size: 30px;
+    padding: 10px 10px 5px 15px;
     font-family: 'BeyondInfinity';
     text-decoration: none;
     color: #A5D3EE;
     border: 1px solid #A5D3EE;
 }
-.reservar img {
-    height: 65%;
-}
 .menu {
     display: flex;
-    height: 100%;
     justify-content: right;
     margin: 0 20px;
     border-radius: 10px;
@@ -159,11 +155,10 @@ ul {
 .menu-toggler {
     display: flex;
     align-items: center;
-    height: 100%;
     cursor: pointer;
 }
 .menu-toggler img {
-    height: 50%;
+    height: 35px;
 }
 .contacto-wpp {
     position: fixed;
@@ -179,16 +174,15 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     row-gap: 30px;
-    height: 80vh;
-    padding: 0 10%;
+    padding: 8%;
 }
 .container-intro-text p {
     font-weight: 600;
 }
 .container-intro-text img {
-    height: max(150px, 11vw);
+    width: 100%;
+    max-width: 500px;
 }
 .home-image-container {
     height: 100vh;
@@ -198,7 +192,7 @@ ul {
     align-items: center;
 }
 .home-image {
-    margin: 7%;
+    margin: 10%;
     height: min(45%, 25vw);
     min-height: 250px;
 }
@@ -210,7 +204,10 @@ ul {
 }
 .diapositiva img{
     object-fit: cover;
-    width: 100%;
+    width: 45%;
+}
+#img-servicios-mobile {
+    display: none;
 }
 .diapositiva a {
     background-color: #183d63;
@@ -226,7 +223,6 @@ ul {
 }
 
 .diapo-text {
-    width: 50%;
     padding: 0px 70px;
     display: flex;
     flex-direction: column;
@@ -248,7 +244,7 @@ ul {
     align-items: center;
     justify-content: center;
     row-gap: 30px;
-    height: 80vh;
+    padding: 30px 0;
 }
 .carousel-container {
     overflow: hidden;
@@ -271,7 +267,7 @@ ul {
     flex-direction: column;
 }
 .header-servicios h1 {
-    align-self: flex-end;
+    text-align: end;
     padding: 0px 10%;
     font-family: 'BeyondInfinity';
     font-size: max(6vw, 70px);
@@ -285,7 +281,7 @@ ul {
     display: flex;
     justify-content: space-around;
     column-gap: 30px;
-    padding: 50px 10%;
+    padding: 50px 0;
     flex-wrap: wrap;
 }
 .iconos img {
@@ -304,15 +300,20 @@ ul {
 .container-verservicios img {
     height: 70px;
 }
+.ubi-bg > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+}
 .container-ubi {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     row-gap: 20px;
-    padding: 0px 120px;
-    width: 60%;
-    min-width: 400px;
+    max-width: 800px;
 }
 .map {
     width: 100%;
@@ -322,7 +323,7 @@ ul {
 .container-footer {
     display: flex;
     min-height: 400px;
-    padding: 0 30px;
+    padding: 30px;
     justify-content: space-around;
     font-family: 'PoiretOne-Regular';
     font-size: 24px;
@@ -632,6 +633,9 @@ ul {
     .navbar-bg-image {
         height: 220px;
     }
+    .navbar-elements a {
+        font-size: 38px;
+    }
     .container-verservicios img {
         height: 80px;
     }
@@ -665,6 +669,9 @@ ul {
     body {
         font-size: 26px;
     }
+    .menu-toggler img {
+        height: 30px;
+    }
     .row-iconos-apto div {
         width: 90px;
         height: 90px;
@@ -683,6 +690,12 @@ ul {
     }
     .navbar-bg-image{
         height: 130px;
+    }
+    .menu-toggler img {
+        height: 25px;
+    }
+    .diapo-text {
+        padding: 0 50px;
     }
     .row-iconos-apto div {
         width: 70px;
@@ -730,7 +743,47 @@ ul {
 @media only screen and (max-width: 778px) {
     body {
         font-size: 22px;
-    }  
+    }
+    .intro-bg {
+        background-attachment: unset !important;
+    }
+    .container-intro-text {
+        padding: 40px;
+    }
+    .diapo-bg {
+        background-attachment: unset !important;
+    }
+    .diapositiva {
+        flex-direction: column;
+        row-gap: 30px;
+        padding: 40px;
+    }
+    .diapositiva img {
+        width: 100%;
+        max-width: 550px;
+    }
+    #img-servicios-desk {
+        display: none;
+    }
+    #img-servicios-mobile {
+        display: block;
+    }
+    .diapo-text {
+        padding: 0;
+        width: unset;
+    }
+    .iconos-bg {
+        padding: 40px !important;
+    }
+    .header-servicios {
+        padding: 0;
+    }
+    .header-servicios h1 {
+        padding: 0;
+    }
+    .ubi-bg {
+        padding: 40px !important;
+    }
     .row-iconos-apto div {
         width: 55px;
         height: 55px;
@@ -739,7 +792,7 @@ ul {
         width: 85px;
     }
 }
-@media only screen and (max-width: 700px) {
+@media (max-width: 700px) {
     .navbar-bg-image {
         height: 130px;
     }
@@ -754,15 +807,28 @@ ul {
         margin: 0 10px;
     }
     .logo-nav img {
-        height: 70px;
+        height: 64px;
     }
-    .contacto-wpp {
-        margin: 10px;
-    }
-    .contacto-wpp img {
-        width: 40px;
-    }
-    .reservar {
+    .navbar-elements a {
         display: none;
+    }
+}
+
+/* ---------------------------------------------------------- Mobile styles ---------------------------------------------------------- */
+@media only screen and (max-width: 500px) {
+    .container-verservicios img {
+        height: 50px;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .footer-col {
+        width: 100%;
+    }
+    .logo-footer img {
+        width: 50%;
+    }
+    .reservar-footer {
+        width: 70%;
     }
 }
