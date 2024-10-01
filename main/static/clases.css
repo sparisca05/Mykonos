@@ -756,6 +756,9 @@ ul {
     .header-servicios h1 {
         padding: 0;
     }
+    .carousel-image {
+        width: 50%;
+    }
     .ubi-bg {
         padding: 40px !important;
     }
