@@ -1,91 +1,146 @@
-{% extends 'main/layouts/nav.html' %}
-
-{% load static %}
-{% block content %}
+{% extends 'main/layouts/nav.html' %} {% load static %} {% block content %}
 <head>
-    <title>Home - Mykonos Aparta Hotel Boutique</title>
+  <title>Home - Mykonos Aparta Hotel Boutique</title>
 </head>
 <div>
-    <div class="intro-bg">
-        <div class="home-image-container">
-            <img class="home-image" src="{% static 'Imagenes/LOGO PIE DE PAGINA.png'%}" alt="">
-        </div>
-        <div class="container-intro-text intro-text-bg">
-            <img src="{% static 'Imagenes/LOGO PG 2.png' %}" alt="">
-            <p class="center">Exclusivo aparta hotel boutique ubicado en el hermoso Golfo de Morrosquillo a tan solo 10 minutos de Coveñas.  
-            Encontrarás el equilibrio perfecto entre diversión y descanso, contamos con hermosos apartamentos, piscina privada, 
-            kioskos y salida frente al mar que harán de tu estadía inolvidable!
-            </p>
-        </div>
+  <div class="intro-bg">
+    <div class="home-image-container">
+      <img
+        class="home-image"
+        src="{% static 'Imagenes/LOGO PIE DE PAGINA.png'%}"
+        alt=""
+      />
     </div>
+    <div class="container-intro-text intro-text-bg">
+      <img src="{% static 'Imagenes/LOGO PG 2.png' %}" alt="" />
+      <p class="center">
+        Exclusivo aparta hotel boutique ubicado en el hermoso Golfo de
+        Morrosquillo a tan solo 10 minutos de Coveñas. Encontrarás el equilibrio
+        perfecto entre diversión y descanso, contamos con hermosos apartamentos,
+        piscina privada, kioskos y salida frente al mar que harán de tu estadía
+        inolvidable!
+      </p>
+    </div>
+  </div>
 </div>
 <div class="diapo-bg">
-    <div class="diapositiva">
-        <div class="diapo-text right">
-            <h1>Apartamentos</h1>
-            <div></div>
-            <p>En Mykonos Apartahotel encontrarás 5 diferentes apartamentos con distintas comodidades pensados para ti y tu familia!</p>
-            <a href="/apartamentos">Conoce los apartamentos!</a>
-        </div>
-        <img src="{% static 'Imagenes/IMAGEN APARTMENTOS PG 3.png' %}" alt="">
+  <div class="diapositiva">
+    <div class="diapo-text right">
+      <h1>Apartamentos</h1>
+      <div></div>
+      <p>
+        En Mykonos Apartahotel encontrarás 5 diferentes apartamentos con
+        distintas comodidades pensados para ti y tu familia!
+      </p>
+      <a href="/apartamentos">Conoce los apartamentos!</a>
     </div>
-    <div class="diapositiva">
-        <img id="img-servicios-desk" src="{% static 'Imagenes/IMAGEN SERVICIOS PG 4.png' %}" alt="">
-        <div class="diapo-text left">
-            <h1>Servicios</h1>
-            <div></div>
-            <p>En Mykonos Apartahotel nos enorgullece ofrecer servicios de alta calidad que harán de tu estadía inolvidable.</p>
-            <a href="/servicios">Conoce nuestros servicios!</a>
-        </div>
-        <img id="img-servicios-mobile" src="{% static 'Imagenes/IMAGEN SERVICIOS PG 4.png' %}" alt="">
+    <img src="{% static 'Imagenes/IMAGEN APARTMENTOS PG 3.png' %}" alt="" />
+  </div>
+  <div class="diapositiva">
+    <img
+      id="img-servicios-desk"
+      src="{% static 'Imagenes/IMAGEN SERVICIOS PG 4.png' %}"
+      alt=""
+    />
+    <div class="diapo-text left">
+      <h1>Servicios</h1>
+      <div></div>
+      <p>
+        En Mykonos Apartahotel nos enorgullece ofrecer servicios de alta calidad
+        que harán de tu estadía inolvidable.
+      </p>
+      <a href="/servicios">Conoce nuestros servicios!</a>
     </div>
-    <div class="diapositiva">
-        <div class="diapo-text right">
-            <h1>Eventos</h1>
-            <div></div>
-            <p>En Mykonos Apartahotel contamos con un gran kiosko perfecto para tus reuniones especiales. Ubicado frente al mar que hará de tu evento memorable.</p>
-            <a href="/eventos">Más información</a>
-        </div>
-        <img src="{% static 'Imagenes/IMAGEN EVENTOS PG 5.png' %}" alt="">
+    <img
+      id="img-servicios-mobile"
+      src="{% static 'Imagenes/IMAGEN SERVICIOS PG 4.png' %}"
+      alt=""
+    />
+  </div>
+  <div class="diapositiva">
+    <div class="diapo-text right">
+      <h1>Eventos</h1>
+      <div></div>
+      <p>
+        En Mykonos Apartahotel contamos con un gran kiosko perfecto para tus
+        reuniones especiales. Ubicado frente al mar que hará de tu evento
+        memorable.
+      </p>
+      <a href="/eventos">Más información</a>
     </div>
+    <img src="{% static 'Imagenes/IMAGEN EVENTOS PG 5.png' %}" alt="" />
+  </div>
 </div>
 <div class="separador"></div>
 <div>
-    <div class="container-galería">
-        <h1>Galería</h1>
-        <div class="carousel-container">
-            <div class="carousel-track">
-                <img class="carousel-image" src="{% static 'Imagenes/IMAGEN GALERIA 1.jpg' %}" alt="Imagen 1">
-                <img class="carousel-image" src="{% static 'Imagenes/IMAGEN GALERIA 2.jpg' %}" alt="Imagen 2">
-                <img class="carousel-image" src="{% static 'Imagenes/IMAGEN GALERIA 3.jpg' %}" alt="Imagen 3">
-                <img class="carousel-image" src="{% static 'Imagenes/IMAGEN GALERIA 4.jpg' %}" alt="Imagen 4">
-                <img class="carousel-image" src="{% static 'Imagenes/IMAGEN GALERIA 5.jpg' %}" alt="Imagen 5">
-            </div>
-        </div>
+  <div class="container-galería">
+    <h1>Galería</h1>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <img
+          class="carousel-image"
+          src="{% static 'Imagenes/IMAGEN GALERIA 1.jpg' %}"
+          alt="Imagen 1"
+        />
+        <img
+          class="carousel-image"
+          src="{% static 'Imagenes/IMAGEN GALERIA 2.jpg' %}"
+          alt="Imagen 2"
+        />
+        <img
+          class="carousel-image"
+          src="{% static 'Imagenes/IMAGEN GALERIA 3.jpg' %}"
+          alt="Imagen 3"
+        />
+        <img
+          class="carousel-image"
+          src="{% static 'Imagenes/IMAGEN GALERIA 4.jpg' %}"
+          alt="Imagen 4"
+        />
+        <img
+          class="carousel-image"
+          src="{% static 'Imagenes/IMAGEN GALERIA 5.jpg' %}"
+          alt="Imagen 5"
+        />
+      </div>
     </div>
+  </div>
 </div>
 <div class="iconos-bg">
-    <div class="header-servicios">
-        <h1>Recarga tu energia</h1>
-        <p class="center" >Una vez en Coveñas, hacemos cada uno de tus días inolvidables</p>
-    </div>
-    <div class="iconos">
-        <img src="{% static 'Imagenes/icono piscina pg 7.png' %}" alt="Piscina">
-        <img src="{% static 'Imagenes/icono playa pg 7.png' %}" alt="Playa">
-        <img src="{% static 'Imagenes/icono kiosko pg 7.png' %}" alt="Kiosko">
-        <img src="{% static 'Imagenes/icono wifi pg 7.png' %}" alt="Wifi">
-    </div>
-    <div class="container-verservicios">
-        <a href="/servicios"><img src="{% static 'Imagenes/ver todos los servicios pg 7.png' %}" alt="Ver todos los servicios"></a>
-    </div>
+  <div class="header-servicios">
+    <h1>Recarga tu energia</h1>
+    <p class="center">
+      Una vez en Coveñas, hacemos cada uno de tus días inolvidables
+    </p>
+  </div>
+  <div class="iconos">
+    <img src="{% static 'Imagenes/icono piscina pg 7.png' %}" alt="Piscina" />
+    <img src="{% static 'Imagenes/icono playa pg 7.png' %}" alt="Playa" />
+    <img src="{% static 'Imagenes/icono kiosko pg 7.png' %}" alt="Kiosko" />
+    <img src="{% static 'Imagenes/icono wifi pg 7.png' %}" alt="Wifi" />
+  </div>
+  <div class="container-button-outline">
+    <a href="/servicios">Ver todos los servicios</a>
+  </div>
 </div>
 <div class="ubi-bg">
-    <div>
-        <h1>UBICACIÓN</h1>
-        <div class="container-ubi">
-            <iframe class="map" title="Ubicación" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d490.47598465685536!2d-75.53364383383725!3d10.436815163664615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef625ecb2ba5a99%3A0x57e6d394106f9573!2sBondo%20Estudio!5e0!3m2!1ses!2sco!4v1720467520918!5m2!1ses!2sco" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p>Estamos ubicados en la 3ra encenada a 10 min del centro de Coveñas. <br> 600 metros justo después de la cienaga la caimanera!</p>
-        </div>
+  <div>
+    <h1>UBICACIÓN</h1>
+    <div class="container-ubi">
+      <iframe
+        class="map"
+        title="Ubicación"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d490.47598465685536!2d-75.53364383383725!3d10.436815163664615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef625ecb2ba5a99%3A0x57e6d394106f9573!2sBondo%20Estudio!5e0!3m2!1ses!2sco!4v1720467520918!5m2!1ses!2sco"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <p>
+        Estamos ubicados en la 3ra encenada a 10 min del centro de Coveñas.
+        <br />
+        600 metros justo después de la cienaga la caimanera!
+      </p>
     </div>
+  </div>
 </div>
 {% endblock %}

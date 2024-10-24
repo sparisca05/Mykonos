@@ -1,274 +1,338 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Exclusivo aparta hotel boutique ubicado en el hermoso Golfo de Morrosquillo a tan solo 10 minutos de Coveñas. Encontrarás el equilibrio perfecto entre diversión y descanso en nuestros hermosos espacios que harán de tu estadía inolvidable!">
-    <link rel="icon" type="image/x-icon" href="{% static 'Imagenes/LOGO PIE DE PAGINA.png' %}">
-    <link rel="stylesheet" href="{% static 'clases.css' %}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Exclusivo aparta hotel boutique ubicado en el hermoso Golfo de Morrosquillo a tan solo 10 minutos de Coveñas. Encontrarás el equilibrio perfecto entre diversión y descanso en nuestros hermosos espacios que harán de tu estadía inolvidable!"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{% static 'Imagenes/LOGO PIE DE PAGINA.png' %}"
+    />
+    <link rel="stylesheet" href="{% static 'clases.css' %}" />
     <script src="{% static 'script.js' %}"></script>
     <style>
-        @font-face {
-            font-family: 'RiotSquad';
-            src: url("{% static 'Fonts/RiotSquad.ttf'%}") format('truetype');
-        }
-        @font-face {
-            font-family: 'PoiretOne-Regular';
-            src: url("{% static 'Fonts/PoiretOne-Regular.ttf'%}") format('truetype');
-        }
-        @font-face {
-            font-family: 'BeyondInfinity';
-            src: url("{% static 'Fonts/Beyond Infinity - Demo.ttf'%}") format('truetype');
-        }
-        .intro-bg{
-            background-image: url("{% static 'Imagenes/IMAGEN HOME INICIO.png'%}");
-            background-attachment: fixed;
-            background-position: 20%;
-            background-size: cover;
-        }
-        .intro-text-bg{
-            background-image: linear-gradient(to top, rgb(25, 105, 173, 0.85), rgba(54, 117, 172, 0.7), rgba(106, 142, 173, 0.801), rgba(0, 0, 0, 0));
-        }
-        .diapo-bg {
-            background-image: linear-gradient(rgba(242, 242, 242, 0.9), rgba(242, 242, 242, 0.9)), url("{% static 'Imagenes/fondo palmeras.png'%}");
-            background-attachment: fixed;
-            background-size: cover;
-        }
-        .iconos-bg{
-            background-image: url("{% static 'Imagenes/HOJAS PALMERA PG 7.png'%}");
-            background-size: contain;
-            padding: 80px 15%;
-        }
-        .ubi-bg {
-            background-image: linear-gradient(rgba(242, 242, 242, 0.9), rgba(242, 242, 242, 0.9)), url("{% static 'Imagenes/IMAGEN GALERIA 1.jpg'%}");
-            background-size: cover;
-            background-position: center;
-            padding: 80px 15%;
-        }
-        .afrodita-bg {
-            background-image: url("{% static 'Imagenes/Aptos/Afrodita.png'%}");
-            background-size: cover;
-            background-position: center;
-            background-blend-mode: multiply;
-            justify-content: flex-end;
-        }
-        .eros-bg {
-            background-image: url("{% static 'Imagenes/Aptos/Eros.png'%}");
-            background-size: cover;
-            background-position: center;
-            background-blend-mode: multiply;
-            justify-content: flex-end;
-            align-items: end;
-        }
-        .zeus-bg {
-            background-image: url("{% static 'Imagenes/Aptos/Zeus.png'%}");
-            background-size: cover;
-            background-position: center;
-            background-blend-mode: multiply;
-            justify-content: flex-end;
-        }
-        .poseidon-bg {
-            background-image: url("{% static 'Imagenes/Aptos/Poseidon.png'%}");
-            background-size: cover;
-            background-position: center;
-            background-blend-mode: multiply;
-        }
-        .atenea-bg {
-            background-image: url("{% static 'Imagenes/Aptos/Atenea.png'%}");
-            background-size: cover;
-            background-position: center;
-            background-blend-mode: multiply;
-            align-items: end;
-        }
-        .apto-afrodita-bg {
-            background-image: url("{% static 'Imagenes/Aptos/Cada apto/fotos afrodita/fondo.png'%}");
-            background-size: contain;
-        }
-        .apto-eros-bg {
-            background-image: url("{% static 'Imagenes/Aptos/Cada apto/fotos eros/ErosBG.png'%}");
-            background-size: contain;
-        }
-        .apto-zeus-bg {
-            background-image: url("{% static 'Imagenes/Aptos/Cada apto/fotos zues/zeusBG.png'%}");
-            background-size: contain;
-        }
-        .icono-personas-bg {
-            background-image: url("{% static 'Imagenes/Aptos/Cada apto/icono personas.png'%}");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        .icono-camas-bg {
-            background-image: url("{% static 'Imagenes/Aptos/Cada apto/icono camas.png'%}");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        .icono-aires-bg {
-            background-image: url("{% static 'Imagenes/Aptos/Cada apto/icono aires.png'%}");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        .icono-comedores-bg {
-            background-image: url("{% static 'Imagenes/Aptos/Cada apto/icono comedores.png'%}");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        .icono-wifi-bg {
-            background-image: url("{% static 'Imagenes/Aptos/Cada apto/icono wifi.png'%}");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        .icono-duchas-bg {
-            background-image: url("{% static 'Imagenes/Aptos/Cada apto/icono duchas.png'%}");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        .icono-parqueaderos-bg {
-            background-image: url("{% static 'Imagenes/Aptos/Cada apto/icono parqueaderos.png'%}");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        .icono-televisores-bg {
-            background-image: url("{% static 'Imagenes/Aptos/Cada apto/icono televisores.png'%}");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        .icono-piscina-bg {
-            background-image: url("{% static 'Imagenes/Aptos/Cada apto/icono piscina.png'%}");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        .icono-mascotas-bg {
-            background-image: url("{% static 'Imagenes/Aptos/Cada apto/icono mascotas.png'%}");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        .footer-bg {
-            background-image: linear-gradient(rgba(165, 211, 238, 0.9), rgba(165, 211, 238, 0.9)), url("{% static 'Imagenes/IMAGEN FONDO PIE DE PÁGINA.png'%}");
-            background-position: center;
-            background-size: cover;
-        }
+      @font-face {
+        font-family: "RiotSquad";
+        src: url("{% static 'Fonts/RiotSquad.ttf'%}") format("truetype");
+      }
+      @font-face {
+        font-family: "PoiretOne-Regular";
+        src: url("{% static 'Fonts/PoiretOne-Regular.ttf'%}") format("truetype");
+      }
+      @font-face {
+        font-family: "BeyondInfinity";
+        src: url("{% static 'Fonts/Beyond Infinity - Demo.ttf'%}")
+          format("truetype");
+      }
+      .intro-bg {
+        background-image: url("{% static 'Imagenes/IMAGEN HOME INICIO.png'%}");
+        background-attachment: fixed;
+        background-position: 20%;
+        background-size: cover;
+      }
+      .intro-text-bg {
+        background-image: linear-gradient(
+          to top,
+          rgb(25, 105, 173, 0.85),
+          rgba(54, 117, 172, 0.7),
+          rgba(106, 142, 173, 0.801),
+          rgba(0, 0, 0, 0)
+        );
+      }
+      .diapo-bg {
+        background-image: linear-gradient(
+            rgba(242, 242, 242, 0.9),
+            rgba(242, 242, 242, 0.9)
+          ),
+          url("{% static 'Imagenes/fondo palmeras.png'%}");
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      .iconos-bg {
+        background-image: url("{% static 'Imagenes/HOJAS PALMERA PG 7.png'%}");
+        background-size: contain;
+        padding: 80px 15%;
+      }
+      .ubi-bg {
+        background-image: linear-gradient(
+            rgba(242, 242, 242, 0.9),
+            rgba(242, 242, 242, 0.9)
+          ),
+          url("{% static 'Imagenes/IMAGEN GALERIA 1.jpg'%}");
+        background-size: cover;
+        background-position: center;
+        padding: 80px 15%;
+      }
+      .afrodita-bg {
+        background-image: url("{% static 'Imagenes/Aptos/Afrodita.png'%}");
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: multiply;
+        justify-content: flex-end;
+      }
+      .eros-bg {
+        background-image: url("{% static 'Imagenes/Aptos/Eros.png'%}");
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: multiply;
+        justify-content: flex-end;
+        align-items: end;
+      }
+      .zeus-bg {
+        background-image: url("{% static 'Imagenes/Aptos/Zeus.png'%}");
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: multiply;
+        justify-content: flex-end;
+      }
+      .poseidon-bg {
+        background-image: url("{% static 'Imagenes/Aptos/Poseidon.png'%}");
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: multiply;
+      }
+      .atenea-bg {
+        background-image: url("{% static 'Imagenes/Aptos/Atenea.png'%}");
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: multiply;
+        align-items: end;
+      }
+      .apto-afrodita-bg {
+        background-image: url("{% static 'Imagenes/Aptos/Cada apto/fotos afrodita/fondo.png'%}");
+        background-size: contain;
+      }
+      .apto-eros-bg {
+        background-image: url("{% static 'Imagenes/Aptos/Cada apto/fotos eros/ErosBG.png'%}");
+        background-size: contain;
+      }
+      .apto-zeus-bg {
+        background-image: url("{% static 'Imagenes/Aptos/Cada apto/fotos zues/zeusBG.png'%}");
+        background-size: contain;
+      }
+      .icono-personas-bg {
+        background-image: url("{% static 'Imagenes/Aptos/Cada apto/icono personas.png'%}");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .icono-camas-bg {
+        background-image: url("{% static 'Imagenes/Aptos/Cada apto/icono camas.png'%}");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .icono-aires-bg {
+        background-image: url("{% static 'Imagenes/Aptos/Cada apto/icono aires.png'%}");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .icono-comedores-bg {
+        background-image: url("{% static 'Imagenes/Aptos/Cada apto/icono comedores.png'%}");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .icono-wifi-bg {
+        background-image: url("{% static 'Imagenes/Aptos/Cada apto/icono wifi.png'%}");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .icono-duchas-bg {
+        background-image: url("{% static 'Imagenes/Aptos/Cada apto/icono duchas.png'%}");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .icono-parqueaderos-bg {
+        background-image: url("{% static 'Imagenes/Aptos/Cada apto/icono parqueaderos.png'%}");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .icono-televisores-bg {
+        background-image: url("{% static 'Imagenes/Aptos/Cada apto/icono televisores.png'%}");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .icono-piscina-bg {
+        background-image: url("{% static 'Imagenes/Aptos/Cada apto/icono piscina.png'%}");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .icono-mascotas-bg {
+        background-image: url("{% static 'Imagenes/Aptos/Cada apto/icono mascotas.png'%}");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .footer-bg {
+        background-image: linear-gradient(
+            rgba(165, 211, 238, 0.9),
+            rgba(165, 211, 238, 0.9)
+          ),
+          url("{% static 'Imagenes/IMAGEN FONDO PIE DE PÁGINA.png'%}");
+        background-position: center;
+        background-size: cover;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar navbar-bg" id="navbar">
-        <img src="{% static 'Imagenes/fondo encabezado.png' %}" class="navbar-bg-image" alt="Background">
-        <ul class="navbar-nav hidden" id="nav-items">
-            <button onclick="toggleMenu()">x</button>
-            <li>
-                <a href="/apartamentos" class="nav-item">Apartamentos</a>
-            </li>
-            <div></div>
-            <li>
-                <a href="/servicios" class="nav-item dropbtn">Servicios</a>
-            </li>
-            <div></div>
-            <li>
-                <a href="/eventos" class="nav-item">Eventos</a>
-            </li>
-            <div></div>
-            <li>
-                <a href="/galeria" class="nav-item">Galeria</a>
-            </li>
-            <div></div>
-            <li>
-                <a href="/ubicacion" class="nav-item">Ubicacion</a>
-            </li>
-            <div></div>
-            <li>
-                <a href="/cabanacompleta" class="nav-item">Cabana completa</a>
-            </li>
-            <div></div>
-            <li>
-                <a href="/contactanos" class="nav-item">Contactanos</a>
-            </li>
-            <div></div>
-        </ul>
-        <div class="container-nav">
-            <a href="/" class="logo-nav">
-                <img src="{% static 'Imagenes/LOGO ENCABEZADO.png' %}" class="imagen-logo" id="logo" alt="logo">
-            </a>
-            <div class="navbar-elements">
-                <a href="">   
-                    Reservar ahora
-                </a>
-                <div class="menu" id="menu">
-                    <div class="menu-toggler" onclick="toggleMenu()">
-                        <img src="{% static 'Imagenes/ICONO MENU ENCABEZADO.png' %}" alt="Menú">
-                    </div>
-                </div>
+      <img
+        src="{% static 'Imagenes/fondo encabezado.png' %}"
+        class="navbar-bg-image"
+        alt="Background"
+      />
+      <ul class="navbar-nav hidden" id="nav-items">
+        <button onclick="toggleMenu()">x</button>
+        <li>
+          <a href="/apartamentos" class="nav-item">Apartamentos</a>
+        </li>
+        <div></div>
+        <li>
+          <a href="/servicios" class="nav-item dropbtn">Servicios</a>
+        </li>
+        <div></div>
+        <li>
+          <a href="/eventos" class="nav-item">Eventos</a>
+        </li>
+        <div></div>
+        <li>
+          <a href="/galeria" class="nav-item">Galeria</a>
+        </li>
+        <div></div>
+        <li>
+          <a href="/ubicacion" class="nav-item">Ubicacion</a>
+        </li>
+        <div></div>
+        <li>
+          <a href="/cabanacompleta" class="nav-item">Cabana completa</a>
+        </li>
+        <div></div>
+        <li>
+          <a href="/contactanos" class="nav-item">Contactanos</a>
+        </li>
+        <div></div>
+      </ul>
+      <div class="container-nav">
+        <a href="/" class="logo-nav">
+          <img
+            src="{% static 'Imagenes/LOGO ENCABEZADO.png' %}"
+            class="imagen-logo"
+            id="logo"
+            alt="logo"
+          />
+        </a>
+        <div class="navbar-elements">
+          <a href=""> Reservar ahora </a>
+          <div class="menu" id="menu">
+            <div class="menu-toggler" onclick="toggleMenu()">
+              <img
+                src="{% static 'Imagenes/ICONO MENU ENCABEZADO.png' %}"
+                alt="Menú"
+              />
             </div>
+          </div>
         </div>
+      </div>
     </nav>
-    <a class="contacto-wpp" href="">
-        <img src="{% static 'Imagenes/LOGO WHATSAPP.png' %}" alt="Whatsapp">
+    <a class="contacto-wpp" href="https://wa.me/573235106772" target="_blank">
+      <img src="{% static 'Imagenes/LOGO WHATSAPP.png' %}" alt="Whatsapp" />
     </a>
-    {% block content %}
-    {% endblock %}
+    {% block content %} {% endblock %}
     <div class="container-footer footer-bg">
-        <div class="logo-footer">
-            <img src="{% static 'Imagenes/LOGO PIE DE PAGINA.png'%}" alt="Mykonos">
-        </div>
-        <div class="footer">
-            <div class="footer-col">
-                <div>
-                    <div class="block-footer-subt">
-                        <h4 class="footer-subt">Dirección</h4>
-                    </div>
-                    <div class="block-footer-info">
-                        <p>Calle 4 # 20 - 103 <br>
-                        Coveñas. Sucre. Colombia</p>
-                        <p>Código postal: 706050</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="block-footer-subt">
-                        <h4 class="footer-subt">Contacto</h4>
-                    </div>
-                    <div class="block-footer-info">
-                        <p>+57 323 5106772</p>
-                        <p>mykonosapartahotel@gmail.com <br>
-                        finayuda@gmail.com</p>
-                    </div>
-                </div>
+      <div class="logo-footer">
+        <img
+          src="{% static 'Imagenes/LOGO PIE DE PAGINA.png'%}"
+          alt="Mykonos"
+        />
+      </div>
+      <div class="footer">
+        <div class="footer-col">
+          <div>
+            <div class="block-footer-subt">
+              <h4 class="footer-subt">Dirección</h4>
             </div>
-            <div class="footer-col">
-                <div>
-                    <div class="block-footer-subt">
-                        <h4 class="footer-subt">Redes sociales</h4>
-                    </div>
-                    <div class="block-footer-info">
-                        <p>Puedes seguirnos en:</p>
-                        <div>
-                            <a href=""><img class="icono-redes" src="{% static 'Imagenes/LOGO WHATSAPP.png' %}" alt="Whatsapp"></a>
-                            <a href=""><img class="icono-redes" src="{% static 'Imagenes/LOGO INSTAGRAM.png' %}" alt="Instagram"></a>
-                            <a href=""><img class="icono-redes" src="{% static 'Imagenes/LOGO AIRBNB.png' %}" alt="Airbnb"></a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="block-footer-info">
-                        <p>Check-in: 3pm <br>
-                        Check-out: 11am</p>
-                    </div>
-                </div>
+            <div class="block-footer-info">
+              <p>
+                Calle 4 # 20 - 103 <br />
+                Coveñas. Sucre. Colombia
+              </p>
+              <p>Código postal: 706050</p>
             </div>
+          </div>
+          <div>
+            <div class="block-footer-subt">
+              <h4 class="footer-subt">Contacto</h4>
+            </div>
+            <div class="block-footer-info">
+              <p>+57 323 5106772</p>
+              <p>
+                mykonosapartahotel@gmail.com <br />
+                finayuda@gmail.com
+              </p>
+            </div>
+          </div>
         </div>
-        <div style="display: flex; align-items: center; justify-content: center;">
-            <a href="#" class="reservar-footer" onclick="document.location='/'">
-                <img src="{% static 'Imagenes/RESERVAR AHORA pie de pagina.png' %}" alt="Reservar">
-            </a>
+        <div class="footer-col">
+          <div>
+            <div class="block-footer-subt">
+              <h4 class="footer-subt">Redes sociales</h4>
+            </div>
+            <div class="block-footer-info">
+              <p>Puedes seguirnos en:</p>
+              <div>
+                <a href="https://wa.me/573235106772" target="_blank"
+                  ><img
+                    class="icono-redes"
+                    src="{% static 'Imagenes/LOGO WHATSAPP.png' %}"
+                    alt="Whatsapp"
+                /></a>
+                <a
+                  href="https://www.instagram.com/mykonosapartahotel.covenas?igsh=azZodnJlN291YTMy"
+                  target="_blank"
+                  ><img
+                    class="icono-redes"
+                    src="{% static 'Imagenes/LOGO INSTAGRAM.png' %}"
+                    alt="Instagram"
+                /></a>
+                <a href=""
+                  ><img
+                    class="icono-redes"
+                    src="{% static 'Imagenes/LOGO AIRBNB.png' %}"
+                    alt="Airbnb"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="block-footer-info">
+              <p>
+                Check-in: 3pm <br />
+                Check-out: 11am
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
+      <div style="display: flex; align-items: center; justify-content: center">
+        <a href="#" class="reservar-footer" onclick="document.location='/'">
+          <img
+            src="{% static 'Imagenes/RESERVAR AHORA pie de pagina.png' %}"
+            alt="Reservar"
+          />
+        </a>
+      </div>
     </div>
-</body>
+  </body>
 </html>

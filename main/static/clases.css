@@ -290,17 +290,26 @@ ul {
     height: 16vw;
     min-height: 140px;
 }
-.container-verservicios {
+.container-button-outline {
     display: flex;
     justify-content: center;
 }
-.container-verservicios a {
+.container-button-outline a {
+    font-family: 'BeyondInfinity';
+    font-size: 2.5em;
+    text-decoration: none;
+    text-align: center;
+    color: #183d63;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px solid #183d63;
+    border-radius: 10px;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
 }
-.container-verservicios img {
-    height: 70px;
+.container-button-outline a:hover {
+    background-color: #A5D3EE;
 }
 .ubi-bg > div {
     display: flex;
@@ -375,6 +384,8 @@ ul {
 /* ---------------------------------------------------------- Apartamentos page styles ---------------------------------------------------------- */
 .container-aptos {
     padding: 7%;
+}
+.container-aptos, .container-servicios, .container-eventos {
     padding-top: 200px;
 }
 .grid-aptos {
@@ -562,9 +573,6 @@ ul {
 }
 
 /* ---------------------------------------------------------- Servicios styles ---------------------------------------------------------- */
-.container-servicios {
-    padding-top: 200px;
-}
 .intro-servicios {
     display: flex;
     flex-direction: column;
@@ -606,6 +614,21 @@ ul {
     background-color: #a5d3ee46;
 }
 
+/* ---------------------------------------------------------- Eventos styles ---------------------------------------------------------- */
+.tipos-eventos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px 30px;
+    padding: 5% 0;
+    div {
+        color: #183d63;
+        font-family: 'BeyondInfinity';
+        font-size: 2em;
+    }
+}
+
 /* ---------------------------------------------------------- Responsive styles ---------------------------------------------------------- */
 @media only screen and (min-width: 1600px) {
     .navbar-bg-image {
@@ -614,8 +637,8 @@ ul {
     .navbar-elements a {
         font-size: 38px;
     }
-    .container-verservicios img {
-        height: 80px;
+    .container-button-outline a {
+        font-size: 2.2em;
     }
     .container-aptos, .container-servicios {
         padding-top: 220px;
@@ -679,8 +702,8 @@ ul {
         width: 70px;
         height: 70px;
     }
-    .container-verservicios img {
-        height: 60px;
+    .container-button-outline a {
+        font-size: 2em;
     }
     .container-aptos, .container-servicios {
         padding-top: 150px;
@@ -769,6 +792,12 @@ ul {
     .iconos-servicios div img {
         width: 85px;
     }
+    .container-button-outline a {
+        font-size: 1.8em;
+    }
+    .tipos-eventos div {
+        font-size: 1.5em;
+    }
 }
 @media (max-width: 700px) {
     .navbar-bg-image {
@@ -794,8 +823,8 @@ ul {
 
 /* ---------------------------------------------------------- Mobile styles ---------------------------------------------------------- */
 @media only screen and (max-width: 500px) {
-    .container-verservicios img {
-        height: 50px;
+    .container-button-outline a {
+        font-size: 1.5em;
     }
     .footer {
         flex-direction: column;
